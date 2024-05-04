@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+*{
+    font-family: 'Outfit',sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+
+body{
+    width: 100%;
+    background-image: linear-gradient( to bottom, #50137F, #6D1CF2 );
+    padding: 02vw 5vw 0px 5vw ;
+    z-index: 1;
+}
+
+/* Estilos do header  */
+
+header{
+    margin: 0px 0px 1rem 0px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 37.5rem;
+    margin: 0px 3rem 0px 30%;
+}
+header nav ul li a{
+    color: #fff;text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'outfit', sans-serif;
+}
+
+.Logo img{
+    width: 105px;
+    height: 80px;
+}
+
+header nav div{
+    display: flex;
+    align-items: center;
+}
+header nav button{
+    width:  149px;
+    height: 40px;
+    border-radius: 10px;
+    background: transparent;
+    border:solid  2px #fff;
+}
+header nav button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/*Estilizaçõa dos circulos das sections*/
+
+.circulos{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.circulos div{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+/* Estilos da section hero */
+
+.section__hero{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 21px;
+    background-color: #1E0738;
+    padding: 2rem 3.688rem;
+    margin-bottom: 4rem;
+}
+.hero_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hero_content h1{
+    width: 36.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 8rem 0px 2rem 0px;
+}
+.hero_content h1 b{
+    color: #6C63FF;
+}
+.hero_content p{
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 400;
+    width: 34.313rem;
+    margin-bottom: 4rem;
+}
+.hero_content button{
+    background-color: #97FF58;
+    width: 14.625rem;
+    height: 4.375rem;
+    border-radius: 14px;
+}
+.hero_content button a {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.hero_container img{
+    width:33.069vw;
+    height: 75vh;
+    margin-bottom: 2rem;
+}
+
+/* Estilos da section about*/
+
+.section__about{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 21px;
+    background-color: #1E0738;
+    padding: 2rem 3.688rem;
+    margin-bottom: 4rem;
+}
+.about_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.about_content h2{
+    width: 36.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 8rem 0px 2rem 0px;
+}
+.about_content h2 b{
+    color: #6C63FF;
+}
+.about_content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    width: 29.875rem;
+}
+
+.about_content ul {
+    margin: 4rem 0px;
+    width: 29.981rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4.5rem;
+}
+.about_content ul li{
+    display: flex;
+    flex-direction: column;
+    height: 7.563rem;
+    width: 6.921rem;
+}
+.about_content ul li p{
+    text-align: center;
+    width: 6.921rem;
+    font-weight: 300;
+}
+.about{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.about_circulos #circulo_um{
+    background-color: #6C63FF;
+}
+
+
+/* Estilos da section price*/
+
+.section__price{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 21px;
+    background-color: #1E0738;
+    padding: 2rem 3.688rem;
+    margin-bottom: 4rem;
+}
+.price_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.price_content h2{
+    width: 26.625rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0rem 0px 2rem 0px;
+}
+.cards_container{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.cards_container div{
+    width: 23.063rem;
+    height: 30.438rem;
+    background-color: #e9d6fd0c;
+    border-radius:2.375rem ;
+    padding: 1rem 1.5rem;
+
+}
+.cards_container h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color:#fff ;
+    margin: 2.5rem 0px 1rem 0px;
+}
+.cards_container p{
+    color: #cdcaf8ce;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+.cards_container ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.cards_container ul li p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+}
+.fa-check{
+    color: #97FF58;
+}
+.cards_container .card_button{
+    background:transparent;
+    width:  auto;
+    height: auto;
+    padding: 0px;
+}
+.cards_container .card_button button{
+    background-color: #97FF58;
+    width: 8.563rem;
+    height: 2.02rem;
+    border-radius: 1rem;
+}
+.cards_container .card_button button a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.section__price .price_circulos #circulo_dois{
+    background-color: #6C63FF;
+}
+
+
+
+/* Estilos da section FAQ */
+
+
+
+.section__faq{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 21px;
+    background-color: #1E0738;
+    padding: 2rem 3.688rem;
+    margin-bottom: 4rem;
+}
+.faq_container{
+    display:flex;
+    flex-direction: row;
+    gap: 18rem;
+    align-items: center;
+}
+.faq_content{
+    display: flex;
+    flex-direction: row;
+}
+
+.cards_faq{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.cards_faq h2{
+    width: 26.625rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 4rem 0px 2rem 0px;
+}
+
+.card_faq button{
+    width: 28.813rem;
+    height: 2.5rem;
+    background-color: #8000FF;
+    border-radius: 7px;
+    border: none;
+}
+.card_faq button span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 5px;
+}
+.card_faq button span p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.fa-caret-down{
+    color: #fff;
+    font-size: 1rem;
+}
+.card_faq .teste{
+    width: 28.813rem;
+    height: 9.125rem;
+    border-radius: 0px 0px 7px 7px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_faq .teste p{
+    font-size: 1rem;
+    font-weight: 500;
+    width: 27rem;
+
+}
+.faq_container img{
+    height:  33.125rem;
+
+}
+.faq_circulos #circulo_três{
+    background-color: #6C63FF;
+}
+
+
+/* Estilos da section footer */
+
+.section__footer{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 21px;
+    background-color: #1E0738;
+    padding: 2rem 3.688rem;
+    margin-bottom: 4rem;
+}
+.footer_container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer_circulos div{
+    background-color: #6C63FF;
+}
+
+
+
+
+
+
+/* Estilos da nav do footer */
+
+.footer__top__elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.nav__footer {
+    display: flex;
+    flex-direction: row;
+}
+.nav__footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 37.5rem;
+    margin: 0px 3rem 0px 30%;
+}
+.nav__footer ul li a{
+    color: #fff;text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'outfit', sans-serif;
+}
+
+/*  estilos do conteúdo  */
+
+.footer_content h2{
+    width: 36.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 8rem 0px 2rem 0px;
+}
+.footer_content p{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #fff;
+    width: 26.063rem;
+}
+.fa-github,.fa-instagram,.fa-twitter,.fa-linkedin-in{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.links__externos{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem 1rem;
+}
+.links__externos a {
+    color : transparent;
+}
+.footer_container img {
+    width: 44.875rem;
+    height: 24.938rem;
+}
+
+
+/* Estilos do footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width:99vw;
+    height: 4.5rem;
+    background-color: #000;
+}
+footer p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Estilos adicionais apenas para deixar o site mais interativo */
+
+section{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.401);
+    backdrop-filter: blur(20px);
+}
