@@ -1,5 +1,14 @@
-@import 'reset.css';
+@import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Outfit',sans-serif;
+}
+
+.btn{
+    background-color: #97ff58;
+    width: 14.625rem;
+    height: 4.375rem;
+    border-radius: 14px;
+    margin-top: 10px;
+    border: none;
 }
