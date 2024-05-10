@@ -3,9 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/aplicação.css">
+    <title>Eduster</title>
 </head>
 <body>
-    teste
+    <main>
+        
+        <img id="retangulo" src="/src/assets/Rectangle 2.png" alt="">
+        
+        <header class="Container_header">
+            
+            <div class="perfil">
+                <div class="foto_perfil">
+                    <img src="/src/assets/pessoa.png" width="85px" alt="Uma pessoa">
+                </div>
+                
+                    <div class="info_perfil">
+                    <p>Gean Ferreira Lourenço</p>
+                    <span>
+                        <p>Analise e desenvolvimento de sistemas</p>
+                    </span>
+
+                </div>
+                 
+            </div>
+            
+            
+            <div class="nav_bar">
+                <nav>
+                    <ul>
+                        <li >
+                            <img src="/src/assets/logo_da_eduster.png" width="72px" height="53px" alt="">
+                        </li>
+                        <li >
+                            <i class="fa-solid fa-house"></i>
+                        </li>
+                        <li class="icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </li>
+                        <li class="icon_create">
+                            <i class="fa-solid fa-plus"></i>
+                        </li>
+                        <li class="icon">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        
+        
+        <section class="conteudo_principal">
+            
+            
+
+            <div class="cabeçalho_do_conteudo">
+
+                <nav>
+                    <ul>
+                        <li>
+                            <span>Dia</span>
+                        </li>
+                        <li>
+                            <span>Semana</span>
+                        </li>
+                        <li>
+                            <span>Mês</span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="circulos">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="container_do_conteudo">
+
+                <div class="container_info">
+                    <div class="container_data">
+                        <span>2024</span>
+                        <h2>04 - Abril</h2>
+                    </div>
+
+                    <div class="status_salas">
+                        <h3>Salas a utilizar</h3>
+                        <div>
+                            <span class="utilizadas">
+                                <span>03</span>
+                                <p>Concluída</p>
+                            </span>
+                            <span class="Restantes">
+                                <span>02</span>
+                                <p>Restantes</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="status_agendados">
+                        <h3>Salas agendadas</h3>
+                        <span class="agendadas">
+                            <span>05</span>
+                            <p>Salas</p>
+                        </span>
+                        <span>
+                    </div>
+                </div>
+
+
+                <div class="container_calendario">
+                    <div class="calendario_days">
+                        <ul>
+                            <li>
+                                <span class="day"></span>
+                                <span class="day_number"></span>
+                            </li>
+                            <li>
+                                <span class="day"></span>
+                                <span class="day_number"></span>
+                            </li>
+                            <li>
+                                <span class="day"></span>
+                                <span class="day_number"></span>
+                            </li>
+                            <li>
+                                <span class="day"></span>
+                                <span class="day_number"></span>
+                            </li>
+                            <li>
+                                <span class="day"></span>
+                                <span class="day_number"></span>
+                            </li>
+                            <li>
+                                <span class="day"></span>
+                                <span class="day_number"></span>
+                            </li>
+                            <li>
+                                <span class="day"></span>
+                                <span class="day_number"></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="calendario_horas">
+                        <div class="horas">
+                            <ul>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                                <li>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="horas_colum">
+                            <div class="div_horas">
+
+                            </div>
+                            <div class="div_horas">
+
+                            </div>
+                            <div class="div_horas">
+
+                            </div>
+                            <div class="div_horas">
+
+                            </div>
+                            <div class="div_horas">
+
+                            </div>
+                            <div class="div_horas">
+
+                            </div>
+                            <div class="div_horas">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </main>
 </body>
 </html>
