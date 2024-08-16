@@ -29,8 +29,8 @@ main{
     right: 2rem;
     display: inline;
     z-index: -1;
-    width: 70rem;
-    height: 46rem;  
+    width: 69.5rem;
+    height: 48.9rem;  
 }
 
 /* Estilos do header e da nav bar */
@@ -39,7 +39,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 10rem;
     height: 100%;
     padding: 2rem 0px 10px 2rem;
 }
@@ -68,6 +68,8 @@ header .perfil{
 }
 
 /* estilos nav bar */
+
+
 .nav_bar {
     width: 5rem;
 }
@@ -93,12 +95,17 @@ header .perfil{
     background-color: transparent;
     border: solid 1px #fff;
 }
-.nav_bar nav ul .icon_create{
+.nav_bar nav ul  .icon_create{
     background-color: #97FF58;
-    color: #000;
     font-size: 1.5rem;
 }
-
+.nav_bar nav ul  .icon_create a {
+    color: #000;
+}
+.nav_bar nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
 /* fim do header */
 
 /* estilos do conteudo principal */
@@ -165,6 +172,7 @@ header .perfil{
 .container_do_conteudo{
     display: flex;
     flex-direction: column;
+    gap:0rem;
 }
 
 /* Estilos do container info */
@@ -228,7 +236,117 @@ header .perfil{
 .status_agendados span span{
     color: #ffff6c;
 }
-
+.container_status{
+    display: flex;
+    gap: 1rem;
+}
 /* fim do container info */
 
 
+/* Estilos do container calendario */
+
+.container_calendario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    width: 65.938rem;
+    height: 33.063rem;
+    margin: 0px 6rem;
+}
+
+
+/* Estilos dias do calendario  */
+
+
+
+.calendario_days ul{
+    display: flex;
+    gap: 1px;
+    background-color: #fff;
+    border-radius: 51px;
+}
+.calendario_days ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8.004rem;
+    height: 7rem;
+    background-color: #1E0735;
+}
+.calendario_days ul li span{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+.calendario_days ul li span:first-child{
+    font-size: 12px;
+    font-weight: 300;
+    color: #969EBB;
+    margin-bottom: 1rem;
+}
+.borderRaidius_day_left{
+    border-radius: 51px 0px 0px 0px;
+}
+.borderRaidius_day_right{
+    border-radius: 0px 51px 0px 0px;
+}
+
+
+.days_colum{
+    display: flex;
+    gap: 1px;
+    background-color: #fff;
+    border-radius: 51px;
+    z-index: 0;
+}
+.div_days{
+    width: 8.004rem;
+    height: 22.625rem;
+    background-color: #1E0735;
+    z-index: 0;
+}
+.div_borderRaidius_left{
+    border-radius: 0px 0px 0px 51px;
+}
+.div_borderRaidius_rigth{
+    border-radius: 0px 0px 51px 0px;
+}
+
+/* fim do dias do calendario */
+
+
+/* estilos das horas do calendario */
+.hora{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+}
+.horas ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.horas ul li{
+    color: #fff;
+}
+
+/* fim das horas do calendario*/
+
+
+/* fim dos estilos do container calendario */
+
+/* fim do container conteudo */
+
+
+/*  estilos dos modais */
+
+.teste{
+    background-color: #97FF58;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    z-index: 3;
+}

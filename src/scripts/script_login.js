@@ -1,3 +1,5 @@
+//  scripts de login e registro
+
 const form = document.querySelector('form');
 const email = document.getElementById('email').value;
 const senha = document.getElementById('senha').value;

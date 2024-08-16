@@ -38,16 +38,26 @@
                             <img src="/src/assets/logo_da_eduster.png" width="72px" height="53px" alt="">
                         </li>
                         <li >
-                            <i class="fa-solid fa-house"></i>
+                            <a href="">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
                         </li>
                         <li class="icon">
-                            <i class="fa-solid fa-calendar-days"></i>
+                            <a href="">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </a>
                         </li>
-                        <li class="icon_create">
-                            <i class="fa-solid fa-plus"></i>
+                        <li class="icon_create" >
+                            
+                                <button id="buttonDeAgendar" >
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            
                         </li>
                         <li class="icon">
-                            <i class="fa-regular fa-bookmark"></i>
+                            <a href="">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -92,121 +102,128 @@
                         <h2>04 - Abril</h2>
                     </div>
 
-                    <div class="status_salas">
-                        <h3>Salas a utilizar</h3>
-                        <div>
-                            <span class="utilizadas">
-                                <span>03</span>
-                                <p>Concluída</p>
+                    <div class="container_status">
+                        <div class="status_salas">
+                            <h3>Salas a utilizar</h3>
+                            <div>
+                                <span class="utilizadas">
+                                    <span>03</span>
+                                    <p>Concluída</p>
+                                </span>
+                                <span class="Restantes">
+                                    <span>02</span>
+                                    <p>Restantes</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="status_agendados">
+                            <h3>Salas agendadas</h3>
+                            <span class="agendadas">
+                                <span>05</span>
+                                <p>Salas</p>
                             </span>
-                            <span class="Restantes">
-                                <span>02</span>
-                                <p>Restantes</p>
-                            </span>
+                            <span>
                         </div>
                     </div>
 
-                    <div class="status_agendados">
-                        <h3>Salas agendadas</h3>
-                        <span class="agendadas">
-                            <span>05</span>
-                            <p>Salas</p>
-                        </span>
-                        <span>
-                    </div>
                 </div>
 
 
                 <div class="container_calendario">
-                    <div class="calendario_days">
+                    
+                    <div class="horas">
                         <ul>
                             <li>
-                                <span class="day"></span>
-                                <span class="day_number"></span>
+                                <span>06:00</span>
                             </li>
                             <li>
-                                <span class="day"></span>
-                                <span class="day_number"></span>
+                                <span>07:00</span>
                             </li>
                             <li>
-                                <span class="day"></span>
-                                <span class="day_number"></span>
+                                <span>08:00</span>
                             </li>
                             <li>
-                                <span class="day"></span>
-                                <span class="day_number"></span>
+                                <span>09:00</span>
                             </li>
                             <li>
-                                <span class="day"></span>
-                                <span class="day_number"></span>
+                                <span>10:00</span>
                             </li>
                             <li>
-                                <span class="day"></span>
-                                <span class="day_number"></span>
+                                <span>11:00</span>
                             </li>
                             <li>
-                                <span class="day"></span>
-                                <span class="day_number"></span>
+                                <span>12:00</span>
+                            </li>
+                            <li>
+                                <span>13:00</span>
+                            </li>
+                            <li>
+                                <span>14:00</span>
+                            </li>
+                            <li>
+                                <span>15:00</span>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="calendario_horas">
-                        <div class="horas">
+                    <div class="Container_calendario_days">
+                        
+                        <div class="calendario_days">
                             <ul>
-                                <li>
-                                    <span></span>
+                                <li class="borderRaidius_day_left">
+                                    <span class="day_number">seg</span>
+                                    <span class="day">01</span>
                                 </li>
                                 <li>
-                                    <span></span>
+                                    <span class="day_number">ter</span>
+                                    <span class="day">02</span>
                                 </li>
                                 <li>
-                                    <span></span>
+                                    <span class="day_number">qua</span>
+                                    <span class="day">03</span>
                                 </li>
                                 <li>
-                                    <span></span>
+                                    <span class="day_number">qui</span>
+                                    <span class="day">04</span>
                                 </li>
                                 <li>
-                                    <span></span>
+                                    <span class="day_number">sex</span>
+                                    <span class="day">05</span>
                                 </li>
                                 <li>
-                                    <span></span>
+                                    <span class="day_number">sab</span>
+                                    <span class="day">06</span>
                                 </li>
-                                <li>
-                                    <span></span>
-                                </li>
-                                <li>
-                                    <span></span>
-                                </li>
-                                <li>
-                                    <span></span>
-                                </li>
-                                <li>
-                                    <span></span>
+                                <li class="borderRaidius_day_right">
+                                    <span class="day_number">dom</span>
+                                    <span class="day">07</span>
                                 </li>
                             </ul>
-                        </div>
+                        </div>    
 
-                        <div class="horas_colum">
-                            <div class="div_horas">
-
-                            </div>
-                            <div class="div_horas">
+                        <div class="days_colum">
+                            <div class="div_days div_borderRaidius_left">
 
                             </div>
-                            <div class="div_horas">
+                            <div class="div_days">
 
                             </div>
-                            <div class="div_horas">
+                            <div class="div_days">
 
                             </div>
-                            <div class="div_horas">
+                            <div class="div_days">
+
+                                <div class="teste">
+                                    <span>teste</span>
+                                </div>
+                            </div>
+                            <div class="div_days">
 
                             </div>
-                            <div class="div_horas">
+                            <div class="div_days">
 
-                            </div>
-                            <div class="div_horas">
+                            </div >
+                            <div class="div_days div_borderRaidius_rigth">
 
                             </div>
                         </div>
@@ -217,8 +234,27 @@
             </div>
         </section>
 
-
-
+        
     </main>
+    <dialog class="agendarSalas" id="modal" >
+        <button id="sair">sair</button>
+        <span>teste</span>
+        <ul>
+            <li>
+                <p>teset'</p>
+            </li>
+            <li>
+                <p>testet</p>
+            </li>
+            <li>
+                <p>testetese</p>
+            </li>
+            <li>
+                <p>etst</p>
+            </li>
+        </ul>
+    </dialog>
+
+    <script src="/src/scripts/script.js"></script>
 </body>
 </html>
