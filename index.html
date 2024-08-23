@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./src/styles/global.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./src/styles/página_inicial.css">
+    <link rel="stylesheet" href="style.css">
     <title>Eduster</title>
 </head>
 <body>
@@ -31,272 +28,25 @@
     </header>
 
     <main>
-        <section class="section__hero" id="Hero">
-            <div class="circulos hero_circulos">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="hero_container">
-                <div class="hero_content">
-                    <h1>Deixe-nos lidar com a <b>organização do seu horário.</b></h1>
-                    <p>Com  nosso sistema de agendamento intuitivo, você pode se concentrar no que faz de melhor. Simplificando sua vida com agendamentos online fáceis e eficientes.</p>
-                    <div class="button_hero">
-                        <button><a href="./src/html/Login_e_resgitro/regiter.html">Criar uma conta</a></button>
-                    </div>
-                </div>
-                <img src="./src/assets/tela_um.svg" alt="Uma imagem de um homem de costa desenhando um gráfico em um quadro">
-            </div>
+        <section class="hero"></section>
+        <scetion class="about">
+
+            <div class="about-image"></div>
+            <div class="about-content"></div>
+            <div class="about-info"></div>
+
+        </scetion>
+        <section class="cards">
+            <div class="card" variant-1></div>
+            <div class="card" variant-2></div>
+            <div class="card" variant-3></div>
         </section>
 
-        <section class="section__about" id="About">
-            <div class="circulos about_circulos">
-                <div id="circulo_um"></div>
-                <div id="circulo_dois"></div>
-                <div id="circulo_três"></div>
-            </div>
-            <div class="about_container">
-                <img src="./src/assets/tela_dois.svg" alt="Uma imagem de uma mossa pintando vários desenhos em volta dela">
-                <div class="about_content">
-                    <h2><b>Seja bem-vindo à </b> EDUSTER</h2>
-                    <p>Onde simplificamos a arte de agendar salas de aula para que você possa dedicar mais tempo ao que realmente importa: aproveitar a vida ao máximo. Na Eduster, estamos aqui para tornar sua vida mais fácil, para que você possa viver com mais leveza e alegria. Nosso compromisso é liberar você das preocupação com horários e reservas, para que possa desfrutar de cada momento com tranquilidade e serenidade.</p>
-                    
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-user about"></i>
-                            <p>+ 30.000 <br> Usuário ativos diariamente </p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-building-columns about"></i>
-                            <p>+50 <br>instituições educacionais</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-house-flag about "></i>
-                            <p>+5 <br>filiais por todo o  país</p>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="section__price" id="Price">
-            <div class="circulos price_circulos">
-                <div id="circulo_um"></div>
-                <div id="circulo_dois"></div>
-                <div id="circulo_três"></div>
-            </div>
-            <div class="price_content">
-                <h2>Serviços e Pacotes</h2>
-                <div class="cards_container">
-                    <div class="card_price">
-                        <h3>Pacote - estudantil</h3>
-                        <p>Desenvolvido para instituições de ensino de elite que buscam a máxima eficiência na gestão de salas e recursos.</p>
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Sistema de agendamento online para todas as salas de aula, laboratórios e espaços administrativos</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Funcionalidades avançadas de alocação de recursos e pessoas</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Suporte técnico 24/7 com SLA personalizado</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Integração completa com sistemas de gerenciamento acadêmico e financeiro</p>
-                            </li>
-                        </ul>
-                        <p>Extras Disponíveis: Consultoria especializada em otimização de processos, personalização completa da plataforma, atualizações automáticas.</p>
-                        <div class="card_button">
-                            <button><a href="/src/html/pacotes.html">Adquirir</a></button>
-                        </div>
-                    </div>
-                    <div class="card_price">
-                        <h3>Pacote - Startups</h3>
-                        <p>Ideal para pequenas reuniões, sessões de brainstorming e entrevistas.</p>
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Uso da sala de reuniões por 1 hora</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Equipamento básico de apresentação (flipchart, marcadores, projetor disponível mediante solicitação)</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Água e café gratuitos</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Acesso Wi-Fi de alta velocidade</p>
-                            </li>
-                        </ul>
-                        <p>Extras Disponíveis: Serviços de catering, equipamento de vídeo conferência, estacionamento reservado.</p>
-                        <div class="card_button">
-                            <button><a href="/src/html/pacotes.html">Adquirir</a></button>
-                        </div>
-                    </div>
-                    <div class="card_price">
-                        <h3>Pacote - Executivo </h3>
-                        <p>Desenvolvido para  conferências, treinamentos avançados e eventos de grande porte.</p>
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Sistema de agendamento online para todas as salas de aula, laboratórios e espaços administrativos</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Acesso Wi-Fi de alta velocidade</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Café gourmet, água, refrigerantes e lanches variados</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Uso da sala de conferências por 3 horas</p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>Equipamento avançado de áudio e vídeo (projetor de alta definição, sistema de som surround, microfones sem fio)</p>
-                            </li>
-                        </ul>
-                        <p>Extras Disponíveis:  Serviços de catering personalizado, equipe de suporte técnico dedicada, decoração personalizada.</p>
-                        <div class="card_button">
-                            <button><a href="/src/html/pacotes.html">Adquirir</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section__faq" id="Faq">
-            <div class="circulos faq_circulos">
-                <div id="circulo_um"></div>
-                <div id="circulo_dois"></div>
-                <div id="circulo_três"></div>
-            </div>
-            <div class="faq_container">
-                <div class="faq_content">
-                    <div class="cards_faq">
-                        <h2>Alguma duvida?</h2>
-                        
-                        <div class="card_faq">
-                            <button>
-                                <span>
-                                    <p>Como posso reservar uma sala através da Eduster?</p>
-                                </span>
-                                <i class="fa-solid fa-caret-down arrow"></i>
-                            </button>
-                            <div class=" resposta_faq  ">
-                                <p>  Reservar uma sala de aula conosco é simples! Basta acessar nossa plataforma online e seguir as instruções para selecionar a data, horário e sala desejados. Você também pode entrar em contato conosco diretamente para obter assistência personalizada.</p>
-                            </div>
-                        </div>
-
-                        <div class="card_faq">
-                            <button>
-                                <span>
-                                    <p>Quais os tipos de salas de aulas que estão dipóniveis?</p>
-                                </span>
-                                <i class="fa-solid fa-caret-down arrow"></i>
-                            </button>
-                            <div class=" resposta_faq  ">
-                                <p> Oferecemos uma variedade de salas de aula para atender às suas necessidades, desde salas de aula tradicionais até espaços mais especializados, como laboratórios de ciências e salas de música.</p>
-                            </div>
-                        </div>
-
-                        <div class="card_faq">
-                            <button>
-                                <span>
-                                    <p>Existe um limite de tempo para as reservas?</p>
-                                </span>
-                                <i class="fa-solid fa-caret-down arrow"></i>
-                            </button>
-                            <div class=" resposta_faq  ">
-                                <p> O tempo de reserva pode variar dependendo da disponibilidade da sala de aula e de nossos horários de funcionamento. Recomendamos que você verifique nossa plataforma online para obter informações específicas sobre os limites de tempo para as reservas.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card_faq">
-                            <button>
-                                <span>
-                                    <p>Posso cancelar ou modificar a minha reserva?</p>
-                                </span>
-                                <i class="fa-solid fa-caret-down arrow"></i>
-                            </button>
-                            <div class=" resposta_faq  ">
-                                <p> Sim, entendemos que planos podem mudar. Você pode cancelar ou modificar sua reserva através da nossa plataforma online dentro do prazo estipulado. Certifique-se de verificar nossa política de cancelamento para mais detalhes.</p>
-                            </div>
-                        </div>
-
-                        <div class="card_faq ">
-                            <button>
-                                <span>
-                                    <p>Como posso entrar em contato com o suporte?</p>
-                                </span>
-                                <i class="fa-solid fa-caret-down arrow"></i>
-                            </button>
-                            <div class="resposta_faq  active">
-                                <p> Estamos aqui para ajudar! Você pode entrar em contato com nossa equipe de suporte ao cliente através do chat online em nossa plataforma, por e-mail ou por telefone. Teremos o prazer de responder a quaisquer dúvidas ou preocupações que você possa ter.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <img src="./src/assets/tela_três.svg" alt="Uma imagem de uma garota com duvida">
-            </div>
-        </section>
-
-        <section class="section__footer" id="Footer">
-            <div class="footer__top__elements">
-                <div class="circulos footer_circulos">
-                    <div id="circulo_um"></div>
-                    <div id="circulo_dois"></div>
-                    <div id="circulo_três"></div>
-                </div>
-                <nav class="nav__footer">
-                    <ul>
-                        <li><a href="#Hero">Home</a></li>
-                        <li><a href="#About">Sobre nós</a></li>
-                        <li><a href="#Price">Pacotes</a></li>
-                        <li><a href="#Faq">FAQ</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer_container">
-                <div class="footer_content">
-                    <h2>Encontre-nos</h2>
-                    <p>Conecte-se conosco nas redes sociais para ficar por dentro das nossas novidades e atualizações!  Siga-nos no Instagram para acompanhar tudo o que estamos compartilhando.</p>
-                    <div class="links__externos">
-                        <a href="https://github.com/Dom-Garotom" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.twitter.com" target="_blank">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <i class="fa-brands fa-linkedin-in"></i>1
-                        </a>
-                    </div>
-                </div>
-                <img src="./src/assets/tela_quatro.svg" alt="Imagem de uma mossa acenando para você">
-            </div>
+        <section class="faqs"></section>
+        <section class="links">
+            <div class="links-content"></div>
+            <div class="links-image"></div>
         </section>
     </main>
-
-    <footer>
-        <p>@CopyRight  Eduster 2024</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./src/scripts/script.js"></script>
 </body>
 </html>
