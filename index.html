@@ -1,52 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Eduster</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="Logo">
-                <a href="#Hero">
-                    <img src="./src/assets/logo_da_eduster.png" alt="Logo da Eduster">
-                </a>
-            </div>
-            <ul>
-                <li><a href="#Hero">Home</a></li>
-                <li><a href="#About">Sobre nós</a></li>
-                <li><a href="#Price">Pacotes</a></li>
-                <li><a href="#Faq">FAQ</a></li>
-                <li><a href="#Footer">Encontre nos</a></li>
-            </ul>
-            <div>
-                <button><a href="./src/html/Login_e_resgitro/login.html">Entrar</a></button>
-            </div>
-        </nav>
+      <nav>
+        <div class="Logo">
+          <a href="#Hero">
+            <img src="./src/assets/logo_da_eduster.png" alt="Logo da Eduster" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="#Hero">Home</a></li>
+          <li><a href="#About">Sobre nós</a></li>
+          <li><a href="#Price">Pacotes</a></li>
+          <li><a href="#Faq">FAQ</a></li>
+          <li><a href="#Footer">Encontre nos</a></li>
+        </ul>
+        <div>
+          <button>
+            <a href="./src/html/Login_e_resgitro/login.html">Entrar</a>
+          </button>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="hero"></section>
-        <scetion class="about">
+      <section class="hero">
+        <div class="hero-content">
+          <div class="circulos-layout">
+            <div class="circulos" variant-1></div>
+            <div class="circulos" variant-2></div>
+            <div class="circulos" variant-3></div>
+          </div>
 
-            <div class="about-image"></div>
-            <div class="about-content"></div>
-            <div class="about-info"></div>
+          <div class="container-hero-content">
+            <h1 class="title-default">
+              Deixe-nos lidar com a <b>organização do seu horário.</b>
+            </h1>
+            <p>
+              Com nosso sistema de agendamento intuitivo, você pode se
+              concentrar no que faz de melhor. Simplificando sua vida com
+              agendamentos online fáceis e eficientes.
+            </p>
+            <button class="button-default">
+              <a href="">Criar uma conta</a>
+            </button>
+          </div>
+        </div>
+        <img src="src/assets/reuniao-ocupada.svg" alt="Imagem de uma sala de reunião" />
+      </section>
 
-        </scetion>
-        <section class="cards">
-            <div class="card" variant-1></div>
-            <div class="card" variant-2></div>
-            <div class="card" variant-3></div>
-        </section>
+      <scetion class="about">
+        <div class="about-image"></div>
+        <div class="about-content"></div>
+        <div class="about-info"></div>
+      </scetion>
+      <section class="cards">
+        <div class="card" variant-1></div>
+        <div class="card" variant-2></div>
+        <div class="card" variant-3></div>
+      </section>
 
-        <section class="faqs"></section>
-        <section class="links">
-            <div class="links-content"></div>
-            <div class="links-image"></div>
-        </section>
+      <section class="faqs"></section>
+      <section class="links">
+        <div class="links-content"></div>
+        <div class="links-image"></div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
