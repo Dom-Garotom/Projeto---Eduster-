@@ -9,10 +9,14 @@
 
 :root {
   font-size: 16px;
+  --cor-primaria: #7c2efb ;
+  --cor-secundaria : #6C63FF ;
+  --cor-sucess : #97FF58;
+  --background : #1e0738de;
 }
 
 body{
-    background-image: linear-gradient( to bottom, #7c2efb,#7a28ff, #6D1CF2 )
+    background-image: linear-gradient( to bottom, var(--cor-primaria),#7a28ff, #6D1CF2 )
 }
 
 
@@ -32,12 +36,10 @@ p{
     color: #fff;
 }
 
-section{
-    background-color: #1e0738de;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+i{
+    font-size: 2.25rem;
+    color: #fff;
 }
-
 
 
 
@@ -113,7 +115,7 @@ header button:hover{
 }
 
 header button a:hover{
-    color: #7c2efb;
+    color: var(--cor-primaria);
 }
 
 
@@ -127,8 +129,8 @@ header button a:hover{
     gap: 20px;
 }
 .circulos{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: #fff;
     border-radius: 100%;
 }
@@ -140,7 +142,7 @@ header button a:hover{
 }
 
 .title-default b{
-    color: #6C63FF;
+    color: var(--cor-secundaria);
 }
 
 .button-default{
@@ -150,8 +152,7 @@ header button a:hover{
     height: 50px;
     border-radius: 8px;
     border: none;
-    background-color: #97FF58;
-}
+    background-color:var(--cor-sucess)}
 .button-default > a{
     text-decoration: none;
     color: #000;
@@ -164,16 +165,24 @@ header button a:hover{
     background-color: #7df235;
 }
 
+.background{
+    background-color: var(--background);
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
 
 /* conteudo da aplicação */
 
 
 
+
 .hero {
-  min-block-size: 80vh;
+  min-block-size: 70vh;
   display: grid;
   grid-template-columns: 3fr 3fr;
   padding: 1.5rem;
+  background-color: var(--background);
 }
 
 .hero > img{
@@ -197,12 +206,11 @@ header button a:hover{
 }
 
 .container-hero-content > p {
+    width: 80%;
     margin: 20px 0px 30px 0px;
 }
 
-
-
-
+/* estilos About */
 
 
 
@@ -215,6 +223,48 @@ header button a:hover{
   gap: 0px 30px;
 }
 
+.about-content {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+    padding: 2rem;
+}
+
+.about-content > p{
+    margin: 15px 0px;
+}
+
+
+.about-info {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.about-info ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.about-info ul > li{
+    height: 85%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
 .about-image {
   background-color: rgb(142, 250, 121);
   grid-column-start: 1;
@@ -222,21 +272,9 @@ header button a:hover{
   grid-row-start: 1;
   grid-row-end: 4;
 }
-.about-content {
-  background-color: blueviolet;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
 
-.about-info {
-  background-color: rgb(250, 121, 149);
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
+
+
 
 .cards {
   min-block-size: 40vw;
@@ -286,6 +324,12 @@ header button a:hover{
 
 
 @media screen and (max-width: 1000px) {
+    .circulos{
+        width: 20px;
+        height: 20px;
+    }
+
+
   .about {
     min-block-size: 80vh;
     display: grid;
@@ -302,7 +346,6 @@ header button a:hover{
     grid-row-end: 2;
   }
   .about-content {
-    background-color: blueviolet;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -310,7 +353,6 @@ header button a:hover{
   }
 
   .about-info {
-    background-color: rgb(250, 121, 149);
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -352,12 +394,16 @@ header button a:hover{
     }
 
     .hero-content > .circulos-layout{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
-    .circulos{
-        width: 25px;
-        height: 25px;
+
+    .about{
+        grid-template-rows: 2fr 3fr 1.5fr;
+    }
+    .about-info  {
+        grid-row-start: 3;
+        grid-row-end: 4; 
     }
 
     
