@@ -210,9 +210,6 @@ header button a:hover{
     margin: 20px 0px 30px 0px;
 }
 
-/* estilos About */
-
-
 
 
 .about {
@@ -293,21 +290,60 @@ header button a:hover{
 
 
 .cards {
-  min-block-size: 40vw;
+  min-block-size: 80vh;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 3fr;
   gap: 20px;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0.9rem;
+    gap: 20px;
+}
+
+.card > .title-card{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.card > .text-card{
+    font-size: 1rem;
+    color: #a1bacd;
+}
+
+.card > ul{
+    flex: 2;
+    list-style: none;
+    padding: 0.9rem;
+}
+.card  .item-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item-card > p{
+    font-size: 1rem;
+}
+.item-card > i {
+    display: inline;
+    font-size: 1.5rem;
+    color: #97FF58;
+}
+
+.card .button-default {
+    font-weight: 700;
+}
+
+
 .card[variant-1] {
-  background-color: blueviolet;
 }
 .card[variant-2] {
-  background-color: rgb(115, 130, 248);
 }
 .card[variant-3] {
-  background-color: rgb(43, 226, 80);
 }
 
 .faqs {
