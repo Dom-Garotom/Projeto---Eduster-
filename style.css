@@ -340,23 +340,37 @@ header button a:hover {
 .faqs {
   min-block-size: 80vh;
   display: grid;
-  grid-template-columns: 3fr 3fr;
+  grid-template-columns: repeat(2, 3fr);
+  padding: 24px;
+  gap: 20px;
+}
+
+.faqs .circulos[variant-3]{
+  background-color: var(--cor-secundaria);
+}
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.faqs img{
+    align-self: center;
+    justify-self: center;
+    max-width: 570px;
+    width: 100%;
+    height: 500px;
 }
 
 .cards_faq {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  width: 28.813rem;
-  height: 26.813;
+  width: 100%;
+  max-width: 40vw;
 }
-.cards_faq h2 {
-  width: 26.625rem;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #fff;
-  margin: 0rem 0px 2rem 0px;
-}
+
 .card_faq button {
   display: flex;
   align-items: center;
@@ -382,7 +396,8 @@ header button a:hover {
 
 .card_faq .resposta_faq {
   display: none;
-  width: 28.813rem;
+  max-width: 50vw;
+  width: 100%;
   height: 0;
   opacity: 0;
   border-radius: 0px 0px 7px 7px;
@@ -393,7 +408,6 @@ header button a:hover {
 .card_faq .resposta_faq p {
   font-size: 1rem;
   font-weight: 500;
-  width: 27rem;
   color: #000;
 }
 .card_faq .active {
@@ -506,6 +520,42 @@ header button a:hover {
     font-size: 1.3rem;
     text-align: center;
   }
+
+  .faqs{
+    min-block-size: 50vh;
+  }
+}
+
+@media screen and (max-width : 700px) {
+  .faqs{
+    grid-template-columns: 3fr;
+  }
+
+  .faqs > img{
+    display: none;
+  }
+
+  .faqs .circulos-layout{
+    align-self: flex-start;
+  }
+
+  .faq-container{
+    align-items: center;
+    gap: 30px;
+  }
+
+  .faq-container h2{
+    font-size: 30px;
+  }
+
+  .cards_faq {
+    max-width: 70vw;
+  }
+
+  .card_faq .resposta_faq {
+    max-width: 70vw;
+  }
+  
 }
 
 @media screen and (max-width: 630px) {
@@ -544,6 +594,6 @@ header button a:hover {
 
 @media screen and (max-width: 450px) {
   :root {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
