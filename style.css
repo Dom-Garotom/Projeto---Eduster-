@@ -44,6 +44,37 @@ i {
   color: #fff;
 }
 
+footer{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  background-color: #000;
+  margin-top: 30px;
+  padding: 24px;
+}
+
+footer nav{
+  text-align: center;
+}
+
+footer nav ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer nav ul li a:hover{
+  color: var(--cor-primaria);
+  text-decoration: underline;
+}
+
 /* Estilos do header  */
 
 header {
@@ -71,7 +102,6 @@ header nav ul li a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  font-family: "outfit", sans-serif;
   transition: 10ms;
 }
 header nav ul li {
@@ -202,6 +232,9 @@ header button a:hover {
   width: 80%;
   margin: 20px 0px 30px 0px;
 }
+
+
+
 
 .about {
   min-block-size: 60vh;
@@ -447,6 +480,41 @@ header button a:hover {
   background-color: rgb(43, 226, 80);
 }
 
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  height: 20vh;
+  gap: 15px;
+}
+
+.footer-content div{
+  display: flex;
+  gap: 20px;
+}
+
+.footer-content div a i:hover{
+  background-color:aliceblue;
+  padding: 5px;
+  border-radius: 100%;
+  color: #000;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Logo img{
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+
 @media screen and (max-width: 1000px) {
   .circulos {
     width: 20px;
@@ -523,6 +591,20 @@ header button a:hover {
 
   .faqs{
     min-block-size: 50vh;
+  }
+
+  footer{
+    grid-template-columns: 3fr;
+    gap: 20px;
+  }
+
+  .footer-content, footer nav, .Logo{
+    text-align: center;
+    justify-self: center;
+  }
+
+  .footer-content div{
+    justify-content: center;
   }
 }
 
