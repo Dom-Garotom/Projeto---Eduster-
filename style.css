@@ -146,6 +146,10 @@ header button a:hover {
   color: var(--cor-primaria);
 }
 
+.menu, .x-mark,.link-entrar{
+  display: none;
+}
+
 /* elementos repetitivos */
 
 .circulos-layout {
@@ -651,6 +655,49 @@ header button a:hover {
 }
 
 @media screen and (max-width: 765px) {
+
+  .menu, .x-mark, .link-entrar{
+    display: block;
+  }
+
+  .x-mark{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+  }
+  .x-mark i{
+    font-size: 1.9rem;
+  }
+
+  header nav button{
+    display: none;
+  }
+
+  header nav ul{
+    flex-direction: column;
+    position: fixed;
+    height: 50vh;
+    width: 50vw;
+    gap: 20px;
+    padding: 1.5rem;
+    background: rgba(0, 0, 1, 0.6);
+    backdrop-filter: blur(10px);
+    right: -100%;
+    top: 0;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  header nav ul li:hover{
+    font-weight: 600;
+  }
+
+  
+  .Logo img{
+    width: 90px;
+  }
+
+
   .cards {
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 50px 2fr 2fr 2fr;
@@ -750,7 +797,7 @@ header button a:hover {
   }
 
   .hero {
-    min-block-size: 70vh;
+    min-block-size: 50vh;
   }
 
   .hero > img {

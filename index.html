@@ -21,14 +21,19 @@
             <img src="./src/assets/logo_da_eduster.png" alt="Logo da Eduster" />
           </a>
         </div>
-        <ul>
+        <ul id="header-list">
+          <li class="x-mark"><i class="fa-solid fa-xmark"></i></li>
           <li><a href="#Hero">Home</a></li>
           <li><a href="#About">Sobre nós</a></li>
           <li><a href="#Price">Pacotes</a></li>
           <li><a href="#Faq">FAQ</a></li>
           <li><a href="#Footer">Encontre nos</a></li>
+          <li class="link-entrar"><a href="">Entar</a></li>
         </ul>
         <div>
+          <span class="menu">
+            <i class="fa-solid fa-bars"></i>
+          </span>
           <button>
             <a href="./src/html/Login_e_resgitro/login.html">Entrar</a>
           </button>
@@ -37,7 +42,7 @@
     </header>
 
     <main>
-      <section class="hero background">
+      <section class="hero background" id="Hero">
         <div class="hero-content">
           <div class="circulos-layout">
             <div class="circulos" variant-1></div>
@@ -66,7 +71,7 @@
         />
       </section>
 
-      <section class="about">
+      <section class="about" id="About">
         <div class="about-image">
           <img
             src="./src/assets/gestaodesalas.png"
@@ -147,7 +152,7 @@
         />
       </section>
 
-      <section class="cards">
+      <section class="cards" id="Price">
         <h2 class="title-default">Serviços e Pacotes</h2>
         <div class="card background" variant-1>
           <h3 class="title-card">Pacote - estudantil</h3>
@@ -268,7 +273,7 @@
         </div>
       </section>
 
-      <section class="faqs background">
+      <section class="faqs background" id="Faq">
         <div class="faq-container">
           <div class="circulos-layout">
             <div class="circulos" variant-1></div>
@@ -392,7 +397,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="Footer">
       <div class="footer-content">
         <h2 class="title-default">Encontre-nos</h2>
         <p>
