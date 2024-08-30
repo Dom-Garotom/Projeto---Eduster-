@@ -320,8 +320,6 @@ header button a:hover {
   .gestao-content {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
     padding: 2rem;
   }
 
@@ -338,6 +336,10 @@ header button a:hover {
 }
 
 .gestao img{
+  max-width: 550px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
   align-self: center;
   justify-self: center;
 }
@@ -672,6 +674,11 @@ header button a:hover {
   .card_faq .resposta_faq {
     max-width: 70vw;
   }
+
+  .gestao img{
+    max-height: 400px;
+    max-width: 200px ;
+  }
   
 }
 
@@ -707,10 +714,21 @@ header button a:hover {
   .cards > .title-default {
     font-size: 2rem;
   }
+
+  .gestao{
+    grid-template-columns: 3fr ;
+  }
+  .gestao img{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
   :root {
     font-size: 10px;
+  }
+
+  .gestao{
+    min-block-size: 40vh;
   }
 }
