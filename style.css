@@ -308,6 +308,41 @@ header button a:hover {
   justify-self: center;
 }
 
+
+
+.gestao {
+  min-block-size: 60vh;
+  display: grid;
+  grid-template-columns: 3fr 3fr; 
+  gap: 0px 30px;
+}
+
+  .gestao-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 2rem;
+  }
+
+.gestao-content > p {
+  margin: 15px 0px;
+}
+
+.gestao-content > .circulos-layout {
+  margin-bottom: 20px;
+}
+
+.gestao-content .circulos[variant-2] {
+  background-color: var(--cor-secundaria);
+}
+
+.gestao img{
+  align-self: center;
+  justify-self: center;
+}
+
+
 .cards {
   min-block-size: 80vh;
   display: grid;
