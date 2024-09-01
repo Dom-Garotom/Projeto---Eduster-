@@ -25,3 +25,16 @@ p {
     margin-top: 10px;
     border: none;
 }
+
+.circulos-layout {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.circulos {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 100%;
+}

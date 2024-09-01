@@ -50,14 +50,20 @@ header{
     margin-top: 10px;
 }
 main{
+    min-block-size: 70vh;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
     overflow: auto;
-    background-color: rgb(180, 43, 226);
+    background-color: var(--background);
+
+    display: grid;
+    grid-template-rows: 80px 3fr ;
     box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    padding: 30px 24px;
+    gap: 20px;
 }
 
 
@@ -137,14 +143,14 @@ main{
 .header-date h2{
     position: relative;
     font-size: 4rem;
-    align-self:center;
+    align-self:end;
     justify-self: start;
 }
 .header-date span{
     position: absolute;
     font-size: 1.7rem;
     color: darkgray;
-    top: 30px;
+    top: 65px;
 }
 
 
@@ -172,4 +178,72 @@ main{
 .status-container ul li b{
     margin-right: 5px;
     color: #97ff58;
+}
+
+
+
+
+.container-navBar-days{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: start; */
+}
+
+.navBar-days {
+    display: flex;
+    align-items: center;
+    background-color: #7c2efb; 
+    border-radius: 8px;
+    padding: 4px 8px;
+    position: relative;
+    width: fit-content;
+    height: 8vh;
+}
+
+.navBar-days ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.navBar-days li {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.navBar-days li:hover {
+    color: var(--background);
+    color: var(--cor-sucess);
+}
+
+.navBar-days li:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background-color: var(--background);
+    background-color: var(--cor-sucess);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.navBar-days li:hover::after {
+    transform: scaleX(1);
+}
+
+.cards-room h2{
+    font-size: 3rem;
+    color: #fff;
 }
