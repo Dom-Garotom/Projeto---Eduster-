@@ -9,10 +9,10 @@
 body{
     min-block-size: 100vh;
     display: grid;
-    grid-template-columns: 6vw 3fr;
+    grid-template-columns: 90px 3fr 1px;
     grid-template-rows: 25vh 3fr;
-    background-image: linear-gradient(to bottom,var(--cor-primaria),#7a28ff,#6d1cf2
-  );
+    background-image: linear-gradient(to bottom,var(--cor-primaria),#7a28ff,#6d1cf2);
+    gap: 10px;
 }
 
 i{
@@ -22,7 +22,7 @@ i{
 nav{
     grid-row-start: 1;
     grid-row-end: 2;
-    max-width: 6vw;
+    max-width: 90px;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -32,6 +32,7 @@ nav{
     transition: 300ms;
     color: transparent;
     padding: 10px;
+    /* border-right: 3px solid #6023c2; */
 }
 
 /* nav:hover{
@@ -42,16 +43,26 @@ nav{
 header{
     grid-column-start: 2;
     grid-column-end: 3;
-    background-color: blueviolet;
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 10px;
 }
 main{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
-    background-color: rgb(180, 43, 226);
     overflow: auto;
+    background-color: rgb(180, 43, 226);
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
+
+
+
+
 
 .nav-content{
     height: 100%;
@@ -109,4 +120,56 @@ main{
 .nav-items li[variant-2] i{
     color: #000;
     font-size: 2rem;
+}
+
+
+
+.header-content{
+    display: grid;
+    grid-template-columns: 2fr 3fr ;
+    height: 100%;
+    color: #fff;
+}
+
+.header-date{
+    display: grid;
+}
+.header-date h2{
+    position: relative;
+    font-size: 4rem;
+    align-self:center;
+    justify-self: start;
+}
+.header-date span{
+    position: absolute;
+    font-size: 1.7rem;
+    color: darkgray;
+    top: 30px;
+}
+
+
+.header-status{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.header-status .status{
+    max-width: 20vw;
+    min-width: 17vw;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #6d1cf2;
+    padding: 10px;
+}
+
+.status .status-container ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 50px;
+    color: rgb(190, 184, 184);
+}
+.status-container ul li b{
+    margin-right: 5px;
+    color: #97ff58;
 }
