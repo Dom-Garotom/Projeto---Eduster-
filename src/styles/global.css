@@ -1,7 +1,9 @@
-@import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
     font-family: 'Outfit',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .btn{

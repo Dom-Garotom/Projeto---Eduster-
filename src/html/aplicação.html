@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/src/styles/global.css">
     <link rel="stylesheet" href="/src/styles/aplicação.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Eduster</title>
 </head>
 <body>
-    
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 5vw 3fr;
+            grid-template-rows: 20vh 3fr;
+        }
+        nav{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: chartreuse;
+            max-width: 5vw;
+            width: 100%;
+            height: 100vh;
+        }
+
+        header{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: blueviolet;
+        }
+        main{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            min-block-size: 60vh;
+            background-color: rgb(180, 43, 226);
+        }
+    </style>
+    <header></header>
+    <nav>
+        <div>
+            <span></span>
+        </div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+    <main>
+
+    </main>
 </body>
 </html>
