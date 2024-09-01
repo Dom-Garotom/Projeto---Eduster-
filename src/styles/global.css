@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #fff;
+  }
+  
+  i {
+    font-size: 2.25rem;
+    color: #fff;
+  }
+  
 .btn{
     background-color: #97ff58;
     width: 14.625rem;
