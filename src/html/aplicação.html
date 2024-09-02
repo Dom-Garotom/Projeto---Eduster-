@@ -1,260 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/src/styles/global.css">
-    <link rel="stylesheet" href="/src/styles/aplicação.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="stylesheet" href="/src/styles/aplicação.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Eduster</title>
-</head>
-<body>
-    <main>
-        
-        <img id="retangulo" src="/src/assets/Rectangle 2.png" alt="">
-        
-        <header class="Container_header">
-            
-            <div class="perfil">
-                <div class="foto_perfil">
-                    <img src="/src/assets/pessoa.png" width="85px" alt="Uma pessoa">
-                </div>
-                
-                    <div class="info_perfil">
-                    <p>Gean Ferreira Lourenço</p>
-                    <span>
-                        <p>Analise e desenvolvimento de sistemas</p>
-                    </span>
+  </head>
+  <body>
+      <nav class="navBar">
+        <div class="nav-content">
+          <div class="perfil-container">
+            <img src="../assets/pessoa.png" alt="Sua foto de perfil" />
+          </div>
+  
+          <ul class="nav-items">
+            <li variant-0>
+              <img src="../assets/logo_da_eduster.png" alt="" />
+            </li>
+            <li variant-1>
+              <span>
+                <i class="fa-solid fa-house"></i>
+              </span>
+              <!-- Home -->
+            </li>
+            <li variant-2>
+              <span >
+                <i class="fa-solid fa-plus"></i>
+              </span>
+              <!-- Agendar salas -->
+            </li>
+            <li>
+              <span>
+                <i class="fa-solid fa-calendar-days"></i>
+              </span>
+              <!-- Salas -->
+            </li>
+            <li>
+              <span>
+                <i class="fa-solid fa-bookmark"></i>
+              </span>
+              <!-- Lembrete -->
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-                </div>
-                 
-            </div>
-            
-            
-            <div class="nav_bar">
-                <nav>
-                    <ul>
-                        <li >
-                            <img src="/src/assets/logo_da_eduster.png" width="72px" height="53px" alt="">
-                        </li>
-                        <li >
-                            <a href="">
-                                <i class="fa-solid fa-house"></i>
-                            </a>
-                        </li>
-                        <li class="icon">
-                            <a href="">
-                                <i class="fa-solid fa-calendar-days"></i>
-                            </a>
-                        </li>
-                        <li class="icon_create" >
-                            
-                                <button id="buttonDeAgendar" >
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                            
-                        </li>
-                        <li class="icon">
-                            <a href="">
-                                <i class="fa-regular fa-bookmark"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            
-        </header>
-        
-        
-        <section class="conteudo_principal">
-            
-            
-
-            <div class="cabeçalho_do_conteudo">
-
-                <nav>
-                    <ul>
-                        <li>
-                            <span>Dia</span>
-                        </li>
-                        <li>
-                            <span>Semana</span>
-                        </li>
-                        <li>
-                            <span>Mês</span>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="circulos">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-
+    <header>
+        <div class="header-content">
+            <div class="header-date">
+                <span>2024</span>
+                <h2><b>04</b> - Abril</h2>
             </div>
 
-            <div class="container_do_conteudo">
-
-                <div class="container_info">
-                    <div class="container_data">
-                        <span>2024</span>
-                        <h2>04 - Abril</h2>
-                    </div>
-
-                    <div class="container_status">
-                        <div class="status_salas">
-                            <h3>Salas a utilizar</h3>
-                            <div>
-                                <span class="utilizadas">
-                                    <span>03</span>
-                                    <p>Concluída</p>
-                                </span>
-                                <span class="Restantes">
-                                    <span>02</span>
-                                    <p>Restantes</p>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="status_agendados">
-                            <h3>Salas agendadas</h3>
-                            <span class="agendadas">
-                                <span>05</span>
-                                <p>Salas</p>
-                            </span>
-                            <span>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="container_calendario">
-                    
-                    <div class="horas">
+            <div class="header-status">
+                <div class="status">
+                    <h2>Salas a utilizar</h2>
+                    <div class="status-container">
                         <ul>
-                            <li>
-                                <span>06:00</span>
-                            </li>
-                            <li>
-                                <span>07:00</span>
-                            </li>
-                            <li>
-                                <span>08:00</span>
-                            </li>
-                            <li>
-                                <span>09:00</span>
-                            </li>
-                            <li>
-                                <span>10:00</span>
-                            </li>
-                            <li>
-                                <span>11:00</span>
-                            </li>
-                            <li>
-                                <span>12:00</span>
-                            </li>
-                            <li>
-                                <span>13:00</span>
-                            </li>
-                            <li>
-                                <span>14:00</span>
-                            </li>
-                            <li>
-                                <span>15:00</span>
-                            </li>
+                            <li><b>3</b>concluidas</li>
+                            <li><b>2</b>restantes</li>
                         </ul>
                     </div>
-
-                    <div class="Container_calendario_days">
-                        
-                        <div class="calendario_days">
-                            <ul>
-                                <li class="borderRaidius_day_left">
-                                    <span class="day_number">seg</span>
-                                    <span class="day">01</span>
-                                </li>
-                                <li>
-                                    <span class="day_number">ter</span>
-                                    <span class="day">02</span>
-                                </li>
-                                <li>
-                                    <span class="day_number">qua</span>
-                                    <span class="day">03</span>
-                                </li>
-                                <li>
-                                    <span class="day_number">qui</span>
-                                    <span class="day">04</span>
-                                </li>
-                                <li>
-                                    <span class="day_number">sex</span>
-                                    <span class="day">05</span>
-                                </li>
-                                <li>
-                                    <span class="day_number">sab</span>
-                                    <span class="day">06</span>
-                                </li>
-                                <li class="borderRaidius_day_right">
-                                    <span class="day_number">dom</span>
-                                    <span class="day">07</span>
-                                </li>
-                            </ul>
-                        </div>    
-
-                        <div class="days_colum">
-                            <div class="div_days div_borderRaidius_left">
-
-                            </div>
-                            <div class="div_days">
-
-                            </div>
-                            <div class="div_days">
-
-                            </div>
-                            <div class="div_days">
-
-                                <div class="teste">
-                                    <span>teste</span>
-                                </div>
-                            </div>
-                            <div class="div_days">
-
-                            </div>
-                            <div class="div_days">
-
-                            </div >
-                            <div class="div_days div_borderRaidius_rigth">
-
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
+                <div class="status">
+                    <h2>Salas agendadas</h2>
+                    <div class="status-container">
+                        <ul>
+                            <li><b>5</b>Agendadas</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        
+    <main>
+        <div class="container-navBar-days">
+            <div class="navBar-days">
+                <ul>
+                    <li>
+                        Dia
+                    </li>
+                    <li>
+                        Semana 
+                    </li>
+                    <li>
+                        Mês
+                    </li>
+                </ul>
+            </div>
+
+            <div class="circulos-layout">
+                <div class="circulos" variant-1></div>
+                <div class="circulos" variant-2></div>
+                <div class="circulos" variant-3></div>
+            </div>
+
+        </div>
+        <div class="cards-room">
+            <h2>Suas salas :</h2>
+            <div class="container-cards">
+                
+            </div>
+        </div>
+
+
+
     </main>
-    <dialog class="agendarSalas" id="modal" >
-        <button id="sair">sair</button>
-        <span>teste</span>
-        <ul>
-            <li>
-                <p>teset'</p>
-            </li>
-            <li>
-                <p>testet</p>
-            </li>
-            <li>
-                <p>testetese</p>
-            </li>
-            <li>
-                <p>etst</p>
-            </li>
-        </ul>
-    </dialog>
-
-    <script src="/src/scripts/script.js"></script>
-</body>
+  </body>
 </html>
