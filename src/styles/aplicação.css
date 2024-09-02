@@ -187,7 +187,7 @@ main{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* align-items: start; */
+    /* align-items: start;3 */
 }
 
 .navBar-days {
