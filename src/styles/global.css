@@ -1,9 +1,22 @@
-@import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
     font-family: 'Outfit',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #fff;
+  }
+  
+  i {
+    font-size: 2.25rem;
+    color: #fff;
+  }
+  
 .btn{
     background-color: #97ff58;
     width: 14.625rem;
@@ -11,4 +24,17 @@
     border-radius: 14px;
     margin-top: 10px;
     border: none;
+}
+
+.circulos-layout {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.circulos {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 100%;
 }
