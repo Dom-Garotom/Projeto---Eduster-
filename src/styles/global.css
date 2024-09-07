@@ -38,3 +38,10 @@ p {
   background-color: #fff;
   border-radius: 100%;
 }
+
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}

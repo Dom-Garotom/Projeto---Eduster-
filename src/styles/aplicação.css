@@ -35,12 +35,6 @@ nav{
     padding: 10px;
     /* border-right: 3px solid #6023c2; */
 }
-
-/* nav:hover{
-    max-width: 15vw;
-    color: black;
-} */
-
 header{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -253,7 +247,101 @@ main{
     transform: scaleX(1);
 }
 
+.cards-room{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .cards-room h2{
     font-size: 3rem;
     color: #fff;
+}
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid: 20px;
+}
+
+.card {
+    background-color: #b2ff59;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 27vw;
+    min-width: 320px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+}
+.card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 20px 0px;
+}
+.user-info {
+    flex: 1;
+    margin-left: 10px;
+}
+.user-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+.user-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+.icons {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.icon img{
+    width: 20px;
+}
+.icons [iconVariant-2]{
+    background-color: #292828;
+}
+.icons [iconVariant-2] i {
+    transform: rotate(40deg);
+}
+
+
+.card-body {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.card-body p{
+    color: #000;
+    font-weight: 500;
+}
+
+
+.card-footer {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+.card-footer p{
+    color: #000;
+    font-weight: bold;
 }
