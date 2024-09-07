@@ -4,6 +4,7 @@
     --cor-secundaria: #6c63ff;
     --cor-sucess: #97ff58;
     --background: #1e0738de;
+    --text-secondary : rgb(190, 184, 184);
 }
 
 body{
@@ -105,6 +106,7 @@ main{
     border-radius: 90%;
     align-self: center;
     justify-self: center;
+    cursor: pointer;
 }
 
 .nav-items li img{
@@ -149,7 +151,7 @@ main{
 .header-date span{
     position: absolute;
     font-size: 1.7rem;
-    color: darkgray;
+    color: var(--text-secondary);
     top: 65px;
 }
 
@@ -158,22 +160,30 @@ main{
     display: flex;
     justify-content: end;
     gap: 20px;
+    
 }
 .header-status .status{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     max-width: 20vw;
     min-width: 17vw;
-    width: 100%;
+    height: 100%;
     border-radius: 15px;
     background-color: #6d1cf2;
     padding: 10px;
 }
 
 .status .status-container ul{
+    height: 100%;
     display: flex;
+    justify-content: space-between;
     list-style: none;
     flex-wrap: wrap;
-    gap: 50px;
-    color: rgb(190, 184, 184);
+    color: var(--text-secondary) ;
+}
+.status-container ul li{
+    margin: 0px 10px 0px 0px;
 }
 .status-container ul li b{
     margin-right: 5px;
