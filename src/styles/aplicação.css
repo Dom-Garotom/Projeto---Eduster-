@@ -264,7 +264,7 @@ main{
 }
 
 .card {
-    background-color: #b2ff59;
+    background-color: #94F95B;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     max-width: 27vw;
@@ -345,3 +345,32 @@ main{
     color: #000;
     font-weight: bold;
 }
+
+
+dialog {
+    margin: auto;
+    max-width: 600px;
+    width: 70%;
+    height: 70vh;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  dialog p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000110;
+    margin: 10px 0px;
+  }
+  
+ 
+  
+  dialog div button {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }

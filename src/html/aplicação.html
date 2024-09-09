@@ -98,10 +98,12 @@
           <div class="circulos" variant-3></div>
         </div>
       </div>
+
       <div class="cards-room">
-        <h2>Suas salas :</h2>
+        <h2>Agendamentos :</h2>
+
         <div class="container-cards">
-          <div class="card" >
+          <div class="card">
             <div class="card-header">
               <img src="../assets/pessoa.png" alt="Avatar" />
               <div class="user-info">
@@ -132,28 +134,144 @@
                 </p>
               </div>
             </div>
-            <div class="card-footer">
-              <p>Ocupada</p>
-              <p class="priority none">
-                Prioridade - Diciplinar
-              </p>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <img src="../assets/pessoa.png" alt="Avatar" />
+              <div class="user-info">
+                <h3>Aluisio Igor</h3>
+                <p>Professor</p>
+              </div>
+              <div class="icons">
+                <div class="icon" iconVariant-1>
+                  <img src="../assets/grid-icon.svg" alt="" />
+                </div>
+                <div class="icon" iconVariant-2>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-content">
+                <p>
+                  Chave 042 - Sala de Aula 05 (Piso 02) - Bloco 02 - Principal
+                  (PF)
+                </p>
+                <p>13:00 - AM - 12/04/24</p>
+              </div>
+              <div class="card-content-more none">
+                <p>
+                  Estou agendando essa sala para poder adiantar conteúdo
+                  atrasado devido a greve
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <img src="../assets/pessoa.png" alt="Avatar" />
+              <div class="user-info">
+                <h3>Aluisio Igor</h3>
+                <p>Professor</p>
+              </div>
+              <div class="icons">
+                <div class="icon" iconVariant-1>
+                  <img src="../assets/grid-icon.svg" alt="" />
+                </div>
+                <div class="icon" iconVariant-2>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-content">
+                <p>
+                  Chave 042 - Sala de Aula 05 (Piso 02) - Bloco 02 - Principal
+                  (PF)
+                </p>
+                <p>13:00 - AM - 12/04/24</p>
+              </div>
+              <div class="card-content-more none">
+                <p>
+                  Estou agendando essa sala para poder adiantar conteúdo
+                  atrasado devido a greve
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <dialog id="modal-1">
+        <div>
+          <i></i>
+          <button></button>
+        </div>
+
+        <h3></h3>
+
+        <form action="">
+          <div class="form-info">
+
+            <label for="">dia</label>
+            <input type="text">
+
+            <label for="">hora</label>
+            <input type="text">
+
+            <label for="">sala</label>
+            <input type="text">
+
+            <label for="">turno</label>
+            <input type="text">
+
+          </div>
+          <div class="form-priority">
+
+            <div>
+              <ul>
+                <li>
+                  <i></i>
+                </li>
+                <li>
+                  <i></i>
+                </li>
+                <li>
+                  <i></i>
+                </li>
+              </ul>
+            </div>
+
+            <label for="">MOtivo do agendamento</label>
+            <textarea name="" id=""></textarea>
+
+
+          </div>
+        </form>
+
+        <button> 
+          <i></i>
+        </button>
+
+
+        
+          
+       
+      </dialog>
+
+
     </main>
+
     <script>
-      document.querySelectorAll('.icon[iconVariant-1]').forEach(icon => {
-        icon.addEventListener('click', function () {
-        const cardId = icon.getAttribute('card-id');
-        const card = document.querySelector(`.card[card-id="${cardId}"]`);
-    
-        if (card) {
-          card.querySelector('.card-content-more').classList.toggle('none');
-          card.querySelector('.priority').classList.toggle('none');
-        }
-  });
-});
+      const openButton = document.querySelector("li[variant-2]");
+
+      openButton.addEventListener("click", () => {
+        const modal = document.getElementById("modal-1");
+        modal.showModal();
+      });
+
     </script>
   </body>
 </html>
