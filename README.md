@@ -13,10 +13,16 @@ A **Eduster** é uma plataforma de gerenciamento e agendamentos de salas. Trata-
 - [x] Criação das páginas inicias.
 - [x] Criação do responsivo das páginas inicias.
 - [x] Criação das págimas de login e registro.
-- [ ] Criação do responsivo das págimas de login e registro.
+- [x] Criação do responsivo das págimas de login e registro.
 - [ ] Criação da verificação e autenticação das págimas de login e registro.
 - [ ] Criação da página principal do projeto.
 - [ ] Criação do responsivo da página principal.
+- [x] Criação dos modais para agendar as salas.
+- [x] Responsivo dos modais para agendar as salas.
+- [ ] Criação dos modais para confirmar os agendamentos e modais de dúvidas.
+- [ ] Criação do modal para listar salas ocupadas e vázias.
+- [ ] Responsivo do modal para listar salas.
+
 
 
 
