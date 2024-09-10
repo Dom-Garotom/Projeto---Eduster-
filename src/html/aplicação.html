@@ -205,60 +205,68 @@
       </div>
 
       <dialog id="modal-1">
-        <div>
-          <i></i>
-          <button></button>
+        
+        <div class="dialog-header">
+          <i class="fa-solid fa-chevron-left button-close"></i>
+          <h3>Agendamentos de salas</h3>
+          <button class="btn-dialog">Agendar</button>
         </div>
 
-        <h3></h3>
 
-        <form action="">
+        <form  >
           <div class="form-info">
 
-            <label for="">dia</label>
-            <input type="text">
+            <label for="">Dia:</label>
+            <input type="date">
 
-            <label for="">hora</label>
-            <input type="text">
+            <label for="">Horário:</label>
+            <input type="time" >
 
-            <label for="">sala</label>
-            <input type="text">
+            <label for="">Sala / Laboratório:</label>
+            <input type="text" >
 
-            <label for="">turno</label>
+            <label for="">Turno:</label>
             <input type="text">
 
           </div>
+
           <div class="form-priority">
 
+            
             <div>
+              <h4>Nível de prioridade :</h4>
               <ul>
                 <li>
-                  <i></i>
+                  <button>
+                    <i class="fa-solid fa-book"></i>
+                  </button>
                 </li>
                 <li>
-                  <i></i>
+                  <button>
+                    <i class="fa-solid fa-flask"></i>
+                  </button>
                 </li>
                 <li>
-                  <i></i>
+                  <button>
+                    <i class="fa-solid fa-people-robbery"></i>
+                  </button>
                 </li>
               </ul>
             </div>
 
-            <label for="">MOtivo do agendamento</label>
+            <label for="">Motivo do agendamento</label>
             <textarea name="" id=""></textarea>
 
 
           </div>
         </form>
 
-        <button> 
-          <i></i>
+        <button class="button-dialog-info"> 
+          <i class="fa-solid fa-person-circle-question"></i>
         </button>
 
+        <button class="btn-dialog btn-dialog-footer none">Agendar</button>
 
-        
-          
-       
       </dialog>
 
 
@@ -266,10 +274,20 @@
 
     <script>
       const openButton = document.querySelector("li[variant-2]");
+      const modal = document.getElementById("modal-1");
+      const closeButton = document.querySelector(".button-close");
+      const agendarButton = document.querySelector(".btn-dialog");
 
       openButton.addEventListener("click", () => {
-        const modal = document.getElementById("modal-1");
         modal.showModal();
+      });
+
+      closeButton.addEventListener("click", () => {
+        modal.close();
+      });
+
+      agendarButton.addEventListener("click", () => {
+        modal.close();
       });
 
     </script>
