@@ -31,13 +31,13 @@
             </span>
             <!-- Home -->
           </li>
-          <li variant-2>
+          <li variant-2 onclick=showCreateSchedule()>
             <span>
               <i class="fa-solid fa-plus"></i>
             </span>
             <!-- Agendar salas -->
           </li>
-          <li>
+          <li variant-3 onclick=showListSchedule()>
             <span>
               <i class="fa-solid fa-calendar-days"></i>
             </span>
@@ -215,7 +215,7 @@
 
         <form  >
           <div class="form-info">
-
+            
             <label for="">Dia:</label>
             <input type="date">
 
@@ -229,6 +229,8 @@
             <input type="text">
 
           </div>
+
+          <div class="divisorBar"></div>
 
           <div class="form-priority">
 
@@ -254,7 +256,7 @@
               </ul>
             </div>
 
-            <label for="">Motivo do agendamento</label>
+            <label for="">Motivo do agendamento :</label>
             <textarea name="" id=""></textarea>
 
 
@@ -269,27 +271,67 @@
 
       </dialog>
 
+      <dialog id="modal-2">
+        
+        <div class="dialog-header">
+          <i class="fa-solid fa-chevron-left button-close"></i>
+          <h3>Agendamentos de salas</h3>
+          <button class="btn-dialog">Agendar</button>
+        </div>
+
+
+        <form  >
+          <div class="form-info">
+
+            <label for="">Dia:</label>
+            <input type="date">
+
+            <label for="">Horário:</label>
+            <input type="time" >
+
+            <label for="">Motivo do agendamento :</label>
+            <textarea name="" id=""></textarea>
+
+            
+
+          </div>
+
+          <div class="divisorBar"></div>
+
+          <div class="form-priority">
+            <h4>Nível de prioridade :</h4>
+            <ul>
+              <li>
+                <input type="checkbox" name="" id="">
+                <p>Lembretes de Tarefas</p>
+              </li>
+              <li>
+                <input type="checkbox" name="" id="">
+                <p>Lembretes de Eventos Recorrentes</p>
+              </li>
+              <li>
+                <input type="checkbox" name="" id="">
+                <p>Lembretes de Provas</p>
+              </li>
+              <li>
+                <input type="checkbox" name="" id="">
+                <p>Lembrete de entrega de trabalhos</p>
+              </li>
+              <li>
+                <input type="checkbox" name="" id="">
+                <p>Lembretes de Compromissos</p>
+              </li>
+              </ul>
+          </div>
+        </form>
+
+        <button class="btn-dialog btn-dialog-footer none">Agendar</button>
+
+      </dialog>
+
 
     </main>
 
-    <script>
-      const openButton = document.querySelector("li[variant-2]");
-      const modal = document.getElementById("modal-1");
-      const closeButton = document.querySelector(".button-close");
-      const agendarButton = document.querySelector(".btn-dialog");
-
-      openButton.addEventListener("click", () => {
-        modal.showModal();
-      });
-
-      closeButton.addEventListener("click", () => {
-        modal.close();
-      });
-
-      agendarButton.addEventListener("click", () => {
-        modal.close();
-      });
-
-    </script>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>
