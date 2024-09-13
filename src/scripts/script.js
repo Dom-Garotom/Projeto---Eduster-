@@ -35,8 +35,23 @@ function showCreateSchedule() {
 }
 
 function showListSchedule() {
-  const modal = document.getElementById("modal-3");
+  const modal = document.getElementById("modal-2");
   const openButton = document.querySelector("li[variant-3]");
+  const closeButton = modal.querySelector(".button-close");
+  const agendarButton = modal.querySelector(".btn-dialog");
+  openButton.addEventListener("click", () => {
+    modal.showModal();
+  });
+
+  closeButton.addEventListener("click", () => {
+    modal.close();
+  });
+
+}
+
+function showReminder() {
+  const modal = document.getElementById("modal-3");
+  const openButton = document.querySelector("li[variant-4]");
   const closeButton = modal.querySelector(".button-close");
   const agendarButton = modal.querySelector(".btn-dialog");
   openButton.addEventListener("click", () => {

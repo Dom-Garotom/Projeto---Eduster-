@@ -37,13 +37,13 @@
             </span>
             <!-- Agendar salas -->
           </li>
-          <li>
+          <li variant-3 onclick=showListSchedule()>
             <span>
               <i class="fa-solid fa-calendar-days"></i>
             </span>
             <!-- Salas -->
           </li>
-          <li variant-3 onclick=showListSchedule()>
+          <li variant-4 onclick=showReminder() >
             <span>
               <i class="fa-solid fa-bookmark"></i>
             </span>
@@ -327,6 +327,34 @@
 
         <button class="btn-dialog btn-dialog-footer none">Agendar</button>
 
+      </dialog>
+
+      <dialog id="modal-2">
+        
+        <div class="dialog-header">
+          <i class="fa-solid fa-chevron-left button-close"></i>
+          <nav>
+            <ul>
+              <li>Ocupadas</li>
+              <li>Vazias</li>
+            </ul>
+            <div>
+              <input type="text" placeholder="Alguma sala em mente?">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </nav>
+          <div class="header-list ">
+            <span class="search" >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <span class="menu" >
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </div>
+        </div>
+        <div class="dialog-container">
+
+        </div>
       </dialog>
 
 
