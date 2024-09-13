@@ -611,6 +611,26 @@ label {
 }
 
 
+#conclude div{
+  display: flex;
+  width: 100%;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#conclude div p{
+  font-size: 2rem;
+}
+
+#conclude i{
+  position: absolute;
+  right: 24px;
+  top: 15px;
+  cursor: pointer;
+}
+
+
 
 @media screen and (max-width:1000px) {
   dialog {
@@ -667,7 +687,7 @@ label {
     display: flex;
     gap: 30px;
   }
-  
+
 }
 
 @media screen and (max-width: 500px){
