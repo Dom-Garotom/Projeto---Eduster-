@@ -610,6 +610,11 @@ label {
   display: flex;
 }
 
+dialog#conclude{
+  min-block-size: 70vh;
+  max-width: 600px;
+  width: 100%;
+}
 
 #conclude div{
   display: flex;
@@ -617,6 +622,7 @@ label {
   min-height: 60vh;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 #conclude div p{
@@ -628,6 +634,50 @@ label {
   right: 24px;
   top: 15px;
   cursor: pointer;
+}
+
+
+dialog#infoPriority {
+  min-block-size: 70vh;
+  max-width: 700px;
+  width: 100%;
+}
+
+#infoPriority ul{
+  display: flex;
+  flex-direction: column;
+  min-block-size: 50vh;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+#infoPriority ul li{
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#infoPriority ul li i {
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;  
+}
+
+#infoPriority ul li > p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+#infoPriority ul li div{
+  display: flex;
+  justify-content: space-between;
+}
+
+#infoPriority ul li div p{
+  font-weight: 500;
 }
 
 
@@ -686,6 +736,18 @@ label {
   #modal-2 .header-list{
     display: flex;
     gap: 30px;
+  }
+
+  dialog#infoPriority {
+    min-block-size: 70vh;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  dialog#conclude{
+    min-block-size: 50vh;
+    max-width: 90%;
+    width: 100%;
   }
 
 }

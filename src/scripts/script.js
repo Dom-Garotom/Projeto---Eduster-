@@ -18,13 +18,22 @@ cards_faq.forEach((card) => {
 
 function showCreateSchedule() {
   const modal = document.getElementById("modal-1");
+  const modalInfo = document.getElementById("infoPriority"); 
   const modalConclude = document.getElementById("conclude");
-  const closeModalConclude = modalConclude.querySelector("i");
-  const pModalConclude = modalConclude.querySelector("p");
+  
   const openButton = document.querySelector("li[variant-2]");
+  const agendarButton = modal.querySelector(".btn-dialog");
+  const buttonInfoModal = modal.querySelector(".button-dialog-info");
+  
+  const closeModalConclude = modalConclude.querySelector("i");
+  const closeModalInfo = modalInfo.querySelector("i");
   const closeButton = modal.querySelector(".button-close");
   const closeButtonFooter = modal.querySelector(".btn-dialog-footer");
-  const agendarButton = modal.querySelector(".btn-dialog");
+
+
+  
+  const pModalConclude = modalConclude.querySelector("p");
+
   openButton.addEventListener("click", () => {
     modal.showModal();
   });
@@ -55,6 +64,17 @@ function showCreateSchedule() {
 
   });
 
+  buttonInfoModal.addEventListener("click", () => {
+    modal.close()
+    modalInfo.showModal();
+
+    closeModalInfo.addEventListener("click", () => {
+      modalInfo.close();
+      modal.showModal();
+    })
+
+  })
+
 }
 
 function showListSchedule() {
@@ -74,12 +94,15 @@ function showListSchedule() {
 function showReminder() {
   const modal = document.getElementById("modal-3");
   const modalConclude = document.getElementById("conclude");
-  const closeModalConclude = modalConclude.querySelector("i");
-  const pModalConclude = modalConclude.querySelector("p");
+
+  const agendarButton = modal.querySelector(".btn-dialog");
   const openButton = document.querySelector("li[variant-4]");
+  const pModalConclude = modalConclude.querySelector("p");
+
+  const closeModalConclude = modalConclude.querySelector("i");
   const closeButton = modal.querySelector(".button-close");
   const closeButtonFooter = modal.querySelector(".btn-dialog-footer");
-  const agendarButton = modal.querySelector(".btn-dialog");
+  
   openButton.addEventListener("click", () => {
     modal.showModal();
   });
@@ -120,6 +143,7 @@ function showMenuHeader() {
   let headerItems = document.querySelectorAll("#header-list li");
   let headerList = document.getElementById("header-list");
   let xMark = document.querySelector(".x-mark");
+  
   menuIcon.addEventListener("click", () => {
     headerList.style.right = 0;
   });
