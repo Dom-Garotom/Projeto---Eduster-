@@ -37,6 +37,7 @@ body {
 main{
   min-block-size: 100vh;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -168,20 +169,24 @@ label {
   display: grid;
   min-block-size: 100vh;
   border-radius: 10px;
-  flex: 2 0 320px;
+  flex: 2 0 300px;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 2fr 2fr 2fr;
   grid-template-columns: 2fr 2fr 2fr ;
 }   
 
+aside.bento-container{
+  flex: 1 1 300px ;
+  grid-template-columns: repeat( 2 , 2fr);
+  grid-template-rows: 1fr 2fr 3fr;
+}
 
 header.bento-container{
   flex: 0 0 5vw;
   grid-template-columns: 1fr;
-  min-block-size: 100vh;
 }
 
 .nav-content {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center
@@ -239,11 +244,14 @@ header.bento-container{
   color: #000;
   font-size: 2rem;
 }
+/*  */
 
-.content{
+
+
+section.content{
   background-color: rgb(121, 250, 231);
   grid-template-columns: 2fr 2fr 2fr;
-  flex: 20 0 570px;
+  flex: 20 1 510px;
 }
 
 .content .date{
@@ -263,6 +271,7 @@ header.bento-container{
   display: grid;
   grid-template-columns: repeat( 3 , minmax(150px , 250px));
   justify-content: space-around;
+  overflow: auto  ;
 }
 
 .content .cards .card-item{
@@ -282,12 +291,9 @@ header.bento-container{
 }
 
 
-aside.bento-container{
-  flex: 1 2 320px;
-  padding: 0px 10px;
-  grid-template-columns: repeat( 2 , 2fr);
-  grid-template-rows: 1fr 2fr 3fr;
-}
+
+/*  */
+
 
 .aside-header{
   margin: 10px 0px 10px 0px;
@@ -627,19 +633,20 @@ dialog#infoPriority {
   }
 
   header.bento-container{
-      position: fixed;
-      grid-column: 1 / -1;
-      grid-row: 8 / 9;
-      bottom: 10px;
-      left: 10px;
-      right: 10px;
-      min-block-size: 7vh;
-      z-index: 10;
+    position: fixed;
+    grid-column: 1 / -1;
+    grid-row: 8 / 9;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    min-block-size: 7vh;
+    z-index: 10;
   }
-
+    
   .nav-content{
     flex-direction: row;
     align-items: center;
+    height: 100%;
   }
   .nav-items{
     flex-direction: row;
@@ -650,39 +657,22 @@ dialog#infoPriority {
   }
 
 
-  .content{
-  background-color: rgb(121, 250, 231);
-  grid-template-columns: 2fr 2fr 2fr;
-  flex: 20 0 500px;
-  }
 }
 
 @media screen and (max-width:843px) {
+  main{
+    flex-direction: column-reverse;
+  }
 
-  aside{
-    grid-template-rows: 2fr 1fr 1fr   ;
-    min-block-size: 50vh;
-  }
-  .aside-header{
-    margin: 5px 10px;
-    grid-row: 1 / 2 ;
-    grid-column: 1 / 1;
+  aside.bento-container{
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    flex: 1 2 100px;
+    min-block-size: 5vh;
   }
   
-  .aside-item{
-    margin: 0px 10px;
-    grid-row: 2 / 4 ;
-    grid-column: 1 / 1;
-    background-color: #153a44;
-    border-radius: 10px;
-  }
-  
-   .aside-date{
-    margin: 0px 10px;
-    grid-row: 1 / 4 ;
-    grid-column: 2 / 3;
-    background-color: #153a44;
-    border-radius: 10px;
+  .aside-item,.aside-date{
+    display: none;
   }
   
 }
@@ -748,12 +738,19 @@ dialog#infoPriority {
     max-width: 90%;
     width: 100%;
   }
+  li[variant-0]{
+    display: none;
+  }
 
 }
 
 @media screen and (max-width: 500px){
   dialog{
     padding: 10px;
+  }
+
+  li[variant-1]{
+    display: none;
   }
 }
 
