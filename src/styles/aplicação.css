@@ -31,6 +31,7 @@ body {
     #7a28ff,
     #6d1cf2
   );
+  padding: 5px 5px;
 }
 
 main{
@@ -43,6 +44,7 @@ main{
 
 i {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 span{
@@ -169,10 +171,10 @@ label {
   flex: 2 0 320px;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 2fr 2fr 2fr;
   grid-template-columns: 2fr 2fr 2fr ;
-}        
+}   
+
 
 header.bento-container{
-  background-color: rgb(250, 121, 149);
   flex: 0 0 5vw;
   grid-template-columns: 1fr;
   min-block-size: 100vh;
@@ -188,7 +190,7 @@ header.bento-container{
 .nav-content .perfil-container {
   position: absolute;
   top: 10px;
-  left: 0;
+  left: 5px;
 }
 .nav-content .perfil-container img {
   max-width: 5vw;
@@ -238,14 +240,6 @@ header.bento-container{
   font-size: 2rem;
 }
 
-/*  */
-
-
-
-
-
-
-
 .content{
   background-color: rgb(121, 250, 231);
   grid-template-columns: 2fr 2fr 2fr;
@@ -289,41 +283,132 @@ header.bento-container{
 
 
 aside.bento-container{
-  background-color: rgb(121, 250, 151);
-  grid-template-columns: repeat( 2 , 2fr);
   flex: 1 2 320px;
+  padding: 0px 10px;
+  grid-template-columns: repeat( 2 , 2fr);
+  grid-template-rows: 1fr 2fr 3fr;
 }
 
-aside .aside-header{
+.aside-header{
   margin: 10px 0px 10px 0px;
-  grid-row: 1 / 2 ;
+  grid-row: 1 / 2;
   grid-column: 1 / -1;
-  background-color: #153a44;
+  height: 10vh;
+  background-color: var(--background);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 4px 0px 4px 2px rgba(0, 0, 0, 0.2), 
+  -6px 0px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.aside-header p{
+  color:#e15573;
+  background-color: #f5d0d8;
+  padding: 8px;
+  height: 44px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+.aside-header p i {
+  color:#e15573;
+}
+
+
+.aside-item{
+  margin: 10px 0px 10px 0px;
+  grid-row: 2 / 3 ;
+  grid-column: 1 / -1;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.aside-item img{
+  width:100%;
+  height:200px;
+  border-radius: 10px;
+  box-shadow: 4px 0px 4px 2px rgba(0, 0, 0, 0.2), 
+  -6px 0px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.aside-date{
+  display: grid;
+  margin: 10px 0px 10px 0px;
+  grid-column: 1 / -1;
+  border-radius: 10px;
+  background-color: var(--background);
+  box-shadow: 4px 0px 4px 2px rgba(0, 0, 0, 0.2), 
+  -6px 0px 4px 2px rgba(0, 0, 0, 0.2);
+  height: 40vh;
+}
+
+.aside-date h2 {
+  color: white;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.aside-calendar {
+  width: 300px;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.aside-calendar div{
+  color: #f4e0ff;
+}
+.aside-calendar .commitment{
+  color: var(--cor-sucess);
+}
+
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.days-of-week div {
+  text-align: center;
+  padding: 8px 0;
+  color: #6c63ff;
+  font-weight: 600;
+}
+
+.days-of-week div:nth-child(7n) {
+  border-right: none;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.days div {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.days div:hover {
+  background-color: #7c2efb;
+  font-weight: 700;
   border-radius: 10px;
 }
 
-aside .aside-item{
-  margin: 10px 0px 10px 0px;
-  grid-row: 2 / 5 ;
-  grid-column: 1 / -1;
-  background-color: #153a44;
-  border-radius: 10px;
+.days div:nth-child(7n) {
+  border-right: none;
 }
 
-aside .aside-date{
-  margin: 10px 0px 10px 0px;
-  grid-row: 5 / 8 ;
-  grid-column: 1 / -1;
-  background-color: #153a44;
-  border-radius: 10px;
+.days div:nth-child(7n + 1) {
+  color: red;
 }
 
 
 
-
-
-
-/*  */
 
 /* classes para os dialogs */
 
@@ -536,6 +621,70 @@ dialog#infoPriority {
     width: 90%;
     scrollbar-width: none;
   }
+
+  main{
+    padding: 7px;
+  }
+
+  header.bento-container{
+      position: fixed;
+      grid-column: 1 / -1;
+      grid-row: 8 / 9;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      min-block-size: 7vh;
+      z-index: 10;
+  }
+
+  .nav-content{
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-items{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nav-content .perfil-container{
+    display: none;
+  }
+
+
+  .content{
+  background-color: rgb(121, 250, 231);
+  grid-template-columns: 2fr 2fr 2fr;
+  flex: 20 0 500px;
+  }
+}
+
+@media screen and (max-width:843px) {
+
+  aside{
+    grid-template-rows: 2fr 1fr 1fr   ;
+    min-block-size: 50vh;
+  }
+  .aside-header{
+    margin: 5px 10px;
+    grid-row: 1 / 2 ;
+    grid-column: 1 / 1;
+  }
+  
+  .aside-item{
+    margin: 0px 10px;
+    grid-row: 2 / 4 ;
+    grid-column: 1 / 1;
+    background-color: #153a44;
+    border-radius: 10px;
+  }
+  
+   .aside-date{
+    margin: 0px 10px;
+    grid-row: 1 / 4 ;
+    grid-column: 2 / 3;
+    background-color: #153a44;
+    border-radius: 10px;
+  }
+  
 }
 
 @media screen and (max-width: 800px) {
@@ -577,6 +726,7 @@ dialog#infoPriority {
   }
 }
 
+
 @media screen and (max-width: 750px) {
   #modal-2 .dialog-header nav {
     display: none;
@@ -607,73 +757,3 @@ dialog#infoPriority {
   }
 }
 
-
-
-/*  */
-
-@media screen and (max-width: 1000px) {
-  main{
-      padding: 7px;
-  }
-
-  header.bento-container{
-      position: fixed;
-      grid-column: 1 / -1;
-      grid-row: 8 / 9;
-      bottom: 10px;
-      left: 10px;
-      right: 10px;
-      min-block-size: 7vh;
-      z-index: 10;
-  }
-
-  .nav-content{
-    flex-direction: row;
-    align-items: center;
-  }
-  .nav-items{
-    flex-direction: row;
-    justify-content: center;
-  }
-  .nav-content .perfil-container{
-    display: none;
-  }
-
-
-  .content{
-  background-color: rgb(121, 250, 231);
-  grid-template-columns: 2fr 2fr 2fr;
-  flex: 20 0 500px;
-  }
-
-}
-
-@media screen and (max-width:859px) {
-
-aside{
-  grid-template-rows: 2fr 1fr 1fr   ;
-  min-block-size: 50vh;
-}
-aside .aside-header{
-  margin: 5px 10px;
-  grid-row: 1 / 2 ;
-  grid-column: 1 / 1;
-}
-
-aside .aside-item{
-  margin: 0px 10px;
-  grid-row: 2 / 4 ;
-  grid-column: 1 / 1;
-  background-color: #153a44;
-  border-radius: 10px;
-}
-
-aside .aside-date{
-  margin: 0px 10px;
-  grid-row: 1 / 4 ;
-  grid-column: 2 / 3;
-  background-color: #153a44;
-  border-radius: 10px;
-}
-
-}
