@@ -15,91 +15,72 @@
     <title>Eduster</title>
   </head>
   <body>
-    <nav class="navBar">
-      <div class="nav-content">
-        <div class="perfil-container">
-          <img src="../assets/pessoa.png" alt="Sua foto de perfil" />
-        </div>
 
-        <ul class="nav-items">
-          <li variant-0>
-            <img src="../assets/logo_da_eduster.png" alt="" />
-          </li>
-          <li variant-1>
-            <span>
-              <i class="fa-solid fa-house"></i>
-            </span>
-            <!-- Home -->
-          </li>
-          <li variant-2 onclick=showCreateSchedule()>
-            <span>
-              <i class="fa-solid fa-plus"></i>
-            </span>
-            <!-- Agendar salas -->
-          </li>
-          <li variant-3 onclick=showListSchedule()>
-            <span>
-              <i class="fa-solid fa-calendar-days"></i>
-            </span>
-            <!-- Salas -->
-          </li>
-          <li variant-4 onclick=showReminder() >
-            <span>
-              <i class="fa-solid fa-bookmark"></i>
-            </span>
-            <!-- Lembrete -->
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <header>
-      <div class="header-content">
-        <div class="header-date">
-          <span>2024</span>
-          <h2><b>04</b> - Abril</h2>
-        </div>
-
-        <div class="header-status">
-          <div class="status">
-            <h2>Salas a utilizar</h2>
-            <div class="status-container">
-              <ul>
-                <li><b>3</b>concluidas</li>
-                <li><b>2</b>restantes</li>
-              </ul>
-            </div>
-          </div>
-          <div class="status">
-            <h2>Salas agendadas</h2>
-            <div class="status-container">
-              <ul>
-                <li><b>5</b>Agendadas</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
 
     <main>
-      <div class="container-navBar-days">
-        <div class="navBar-days">
-          <ul>
-            <li>Dia</li>
-            <li>Semana</li>
-            <li>Mês</li>
-          </ul>
-        </div>
+    
+      <header class=" bento-container">
+        <nav class="navBar">
+          <div class="nav-content">
+            <div class="perfil-container">
+              <img src="../assets/pessoa.png" alt="Sua foto de perfil" />
+            </div>
+    
+            <ul class="nav-items">
+              <li variant-0>
+                <img src="../assets/logo_da_eduster.png" alt="" />
+              </li>
+              <li variant-1>
+                <span>
+                  <i class="fa-solid fa-house"></i>
+                </span>
+               
+              </li>
+              <li variant-2 onclick=showCreateSchedule()>
+                <span>
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+                
+              </li>
+              <li variant-3 onclick=showListSchedule()>
+                <span>
+                  <i class="fa-solid fa-calendar-days"></i>
+                </span>
+                
+              </li>
+              <li variant-4 onclick=showReminder() >
+                <span>
+                  <i class="fa-solid fa-bookmark"></i>
+                </span>
+                
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-        <div class="circulos-layout">
-          <div class="circulos" variant-1></div>
-          <div class="circulos" variant-2></div>
-          <div class="circulos" variant-3></div>
-        </div>
-      </div>
+      <section class="content bento-container">
+          <div class="date"></div>
+          <div class="cards">
+              <div class="card-item"></div>
+              <div class="card-item"></div>
+              <div class="card-item"></div>
+          </div>
+          <div class="calendar"></div>
+      </section>
+      
+      <aside class=" bento-container">
+              <div class="aside-header"></div>
+              <div class="aside-item"></div>
+              <div class="aside-date"></div>
+      </aside>
 
-      <div class="cards-room">
+
+
+
+
+      <!-- <div class="cards-room">
         <h2>Agendamentos :</h2>
 
         <div class="container-cards">
@@ -202,7 +183,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <dialog id="modal-1">
         
