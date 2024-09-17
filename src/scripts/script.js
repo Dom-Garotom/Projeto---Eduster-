@@ -135,6 +135,18 @@ function showReminder() {
 
 }
 
+// Script para o filtro
+
+document.getElementById('filterBtn').addEventListener('click', function() {
+  const filterContent = document.getElementById('filterContent');
+  if (filterContent.style.display === "block") {
+    filterContent.style.display = "none";
+  } else {
+    filterContent.style.display = "block";
+  }
+});
+
+
 // script do menu
 
 
