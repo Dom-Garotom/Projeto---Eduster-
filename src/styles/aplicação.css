@@ -177,7 +177,7 @@ label {
 aside.bento-container{
   flex: 1 1 300px ;
   grid-template-columns: repeat( 2 , 2fr);
-  grid-template-rows: 94px 351px 250px ;
+  grid-template-rows: 94px 351px 170px 60px ;
   grid-auto-rows: 10px;
 }
 
@@ -691,7 +691,23 @@ div[data-schedule-5]{
 }
 
 
+.aside-hide{
+  grid-column: 1 / -1;
+  position: relative;
+}
+.aside-hide button{
+  position: absolute;
+  right: 0;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: var(--background);
+}
 
+.aside-hide button i{
+  color: #fff;
+  font-size: 2rem;
+}
 
 /* classes para os dialogs */
 
