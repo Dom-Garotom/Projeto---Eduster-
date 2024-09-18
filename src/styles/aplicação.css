@@ -317,6 +317,8 @@ header.bento-container{
   flex-direction: column;
   padding: 0px 10px;
   overflow: hidden;
+  max-height: 420px;
+  height: 100%;
 }
 
 .container-info{
@@ -420,6 +422,7 @@ header.bento-container{
   grid-row: 4 / 8 ;
   grid-column: 1 / -1;
   background-color: var(--background);
+  min-block-size: 60vh;
   border-radius: 10px;
   padding: 15px;
 }
@@ -466,7 +469,80 @@ header.bento-container{
 }
 
 
+.calendar .calendar-content{
+  width: 100%;
+  min-block-size: 50vh;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 4px;
+}
 
+.content-container{
+  width: 100%;
+  height: 46vh;
+  border-radius: 4px;
+  
+  display: grid;
+  grid-template-columns: repeat(12,1fr);  
+  grid-template-rows: repeat(6,1fr);  
+}
+.content-container .schedule{
+  height: 40px;
+  border-radius: 0px 6px 6px 0px; 
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 5px;
+}
+.schedule p {
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: 500;
+}
+
+div[data-schedule-1]{
+  background-color: #97ff58;
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+}
+div[data-schedule-2]{
+  background-color: #58ffa0;
+  grid-column: 1 / 8;
+  grid-row: 2 / 3;
+}
+div[data-schedule-3]{
+  background-color: #d258ff;
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+}
+div[data-schedule-4]{
+  background-color: #58b9ff;
+  grid-column: 1 / 9;
+  grid-row: 5 / 6;
+}
+div[data-schedule-5]{
+  background-color: #9b58ff;
+  grid-column: 1 / 10;
+  grid-row: 6 / 7;
+}
+
+
+.content-hours{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  width: 100%;
+  height: 4vh;
+  background-color: #6c63ff;
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  overflow: hidden;
+}
+.content-hours p {
+  align-self: center;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+}
 
 
 /* Aside */
@@ -916,9 +992,16 @@ dialog#infoPriority {
     display: none;
   }
 
+  .content-hours{
+    column-gap: 10px;
+  }
+
 }
 
 @media screen and (max-width: 500px){
+  :root{
+    font-size: 14px;
+  }
   main{
     gap: 30px;
   }
