@@ -186,6 +186,7 @@ section.content{
   grid-template-rows: 122px 389px 1fr 1fr 1fr 2fr 2fr;
   flex: 20 1 510px;
   padding-top: 10px;
+  gap: 10px;
 }
 
 header.bento-container{
@@ -419,7 +420,7 @@ header.bento-container{
 
 .content .calendar{
   margin: 10px 0px 10px 0px;
-  grid-row: 4 / 8 ;
+  grid-row: 3 / 8 ;
   grid-column: 1 / -1;
   background-color: var(--background);
   min-block-size: 60vh;
@@ -879,7 +880,7 @@ dialog#infoPriority {
   }
 
   main{
-    padding: 7px;
+    padding: 0px 7px 60px 7px;
   }
 
   header.bento-container{
@@ -892,6 +893,13 @@ dialog#infoPriority {
     min-block-size: 7vh;
     z-index: 10;
   }
+
+  section.content{
+    padding: 0;
+    grid-template-rows: 122px 389px 1fr 1fr 1fr 2fr 1fr;
+
+  }
+  
     
   .nav-content{
     flex-direction: row;
@@ -901,17 +909,30 @@ dialog#infoPriority {
   .nav-items{
     flex-direction: row;
     justify-content: center;
+    background-color: var(--background);
+    border-radius: 4px;
   }
   .nav-content .perfil-container{
     display: none;
+  }
+
+  .content .calendar{
+    grid-row: 3 / 7 ;
+  }
+
+  .content-hours{
+    column-gap: 10px;
   }
 
 
 }
 
 @media screen and (max-width:843px) {
+
   main{
     flex-direction: column-reverse;
+    min-block-size: 142vh;
+
   }
 
   aside.bento-container{
@@ -920,7 +941,8 @@ dialog#infoPriority {
     flex: 1 2 100px;
     min-block-size: 5vh;
   }
-  
+
+
   .aside-item,.aside-date{
     display: none;
   }
@@ -964,6 +986,7 @@ dialog#infoPriority {
   .divisorBar{
     display: none;
   }
+
 }
 
 
@@ -1003,7 +1026,7 @@ dialog#infoPriority {
     font-size: 14px;
   }
   main{
-    gap: 30px;
+    min-block-size: 142vh;
   }
   dialog{
     padding: 10px;
@@ -1013,4 +1036,3 @@ dialog#infoPriority {
     display: none;
   }
 }
-
