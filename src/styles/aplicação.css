@@ -181,6 +181,10 @@ aside.bento-container{
   grid-auto-rows: 10px;
 }
 
+aside.bento-container.none{
+  display: none;
+}
+
 section.content{
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 122px 389px 1fr 1fr 1fr 2fr 2fr;
@@ -691,13 +695,10 @@ div[data-schedule-5]{
 }
 
 
-.aside-hide{
-  grid-column: 1 / -1;
-  position: relative;
-}
 .aside-hide button{
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: 5px;
+  bottom: 10px;
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
@@ -942,7 +943,6 @@ dialog#infoPriority {
 
   }
   
-    
   .nav-content{
     flex-direction: row;
     align-items: center;
@@ -966,6 +966,17 @@ dialog#infoPriority {
     column-gap: 10px;
   }
 
+  .aside-hide button{
+    bottom: 18px;
+    right: 15px;
+    z-index: 10;
+    background-color: transparent;
+  }
+
+  .aside-hide button:hover{
+    background-color: #1e07389c;
+  }
+
 
 }
 
@@ -977,6 +988,10 @@ dialog#infoPriority {
 
   }
 
+  aside.bento-container.none{
+    display: block;
+  }
+
   aside.bento-container{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -984,8 +999,7 @@ dialog#infoPriority {
     min-block-size: 5vh;
   }
 
-
-  .aside-item,.aside-date{
+  .aside-item,.aside-date , .aside-hide{
     display: none;
   }
   

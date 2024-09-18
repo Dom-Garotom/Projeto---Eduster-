@@ -137,7 +137,7 @@ function showReminder() {
 
 // Script para o filtro
 
-document.getElementById('filterBtn').addEventListener('click', function() {
+document.getElementById('filterBtn').addEventListener('click', () => {
   const filterContent = document.getElementById('filterContent');
   if (filterContent.style.display === "block") {
     filterContent.style.display = "none";
@@ -145,6 +145,13 @@ document.getElementById('filterBtn').addEventListener('click', function() {
     filterContent.style.display = "block";
   }
 });
+
+// script para o button do aside 
+
+document.getElementById("hide-button").addEventListener("click", () =>{
+  const aside = document.querySelector("aside");
+  aside.classList.toggle("none");
+})
 
 
 // script do menu
