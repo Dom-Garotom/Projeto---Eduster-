@@ -1,0 +1,9 @@
+.vscode/
+FETCH_HEAD
+.git/
+
+*.log
+*.bak
+*.tmp
+*.DS_Store
+*.cache

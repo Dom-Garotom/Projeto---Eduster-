@@ -1031,9 +1031,9 @@ dialog#infoPriority {
   section.content{
     padding: 0;
     grid-template-rows: 122px 389px 1fr 1fr 1fr 2fr 1fr;
-
+    row-gap: 40px;
   }
-  
+
   .nav-content{
     flex-direction: row;
     align-items: center;
@@ -1048,6 +1048,7 @@ dialog#infoPriority {
   .nav-content .perfil-container{
     display: none;
   }
+
 
   .content .calendar{
     grid-row: 3 / 7 ;
@@ -1093,6 +1094,8 @@ dialog#infoPriority {
   .aside-item,.aside-date , .aside-hide{
     display: none;
   }
+
+  
   
 }
 
@@ -1188,5 +1191,8 @@ dialog#infoPriority {
 
   li[variant-1]{
     display: none;
+  }
+  section.content{
+    row-gap: 0;
   }
 }
