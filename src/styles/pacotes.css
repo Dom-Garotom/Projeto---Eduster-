@@ -1,59 +1,72 @@
-body{
+body {
     background-image: linear-gradient(to right, #6B1BED, #B66EF9);
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-main{
-    width: 100vw;
-    height: 100vh;
+  }
+  
+  main {
+    min-block-size: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-main h1{
-    font-size: 2rem;
+    padding: 1rem;
+  }
+  
+  main h1 {
     color: #fff;
-}
-.opções{
+    text-align: center;
+  }
+  
+  .opções {
     display: flex;
     flex-direction: row;
-    margin-top: 4rem;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
-    height: 250px;
-}
-.opções div{
-    width: 15.25rem;
-    height: 13.688rem;
+    width: 100%;
+    margin-top: 4rem;
+    padding: 0 1rem; 
+  }
+  
+  .opções div {
+    width: 250px; 
+    height:232px; 
     background-color: #481a8ee0;
     border-radius: 12px;
     text-align: center;
-    margin-bottom: 1;
+    margin-bottom: 1rem;
     transition: 0.5s;
-}
-.opções div a p{
-    width: 13.75rem;
-    height: 4.875rem;
+  }
+  
+  .opções div a p {
+    width: 100%;
+    max-width: 13.75rem;
+    height: auto;
     color: #fff;
     font-weight: 500;
-}
-.opções div a {
+    padding: 0.5rem; 
+  }
+  
+  .opções div a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     width: 100%;
     height: 100%;
     text-decoration: none;
-}
-.opções .fa-solid{
+  }
+  
+  .opções .fa-solid {
     font-size: 3rem;
     color: #fff;
-    margin: 3rem 0px;
-}
-
-.opções div:hover{
+    margin: 3rem 0;
+  }
+  
+  .opções div:hover {
     margin-top: 1rem;
     transition: 100ms;
-}
+  }
+  
