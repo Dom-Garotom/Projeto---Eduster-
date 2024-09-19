@@ -712,6 +712,93 @@ div[data-schedule-5]{
 
 /* classes para os dialogs */
 
+
+.card-room {
+  background-color: #b2ff59;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  min-width: 300px;
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  position: relative;
+}
+.card-room img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0px 20px 0px;
+}
+.user-info {
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+}
+.user-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+.user-info p {
+  margin: 0px;
+  font-size: 12px;
+  color: #666;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.icon img{
+  width: 20px;
+}
+.icons [iconVariant-2]{
+  background-color: #292828;
+}
+.icons [iconVariant-2] i {
+  color: #fff;
+  transform: rotate(40deg);
+}
+.card-room .card-content {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 0;
+}
+.card-room .card-content p{
+  text-align: left;
+  margin: 0px;
+  color: #000;
+  font-weight: 500;
+}
+.card-footer {
+  margin-top: 5px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+.card-footer p{
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+
 .form-info {
   display: flex;
   flex-direction: column;
@@ -829,9 +916,14 @@ div[data-schedule-5]{
 }
 
 #modal-2 .dialog-container{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px , 30vw));
+  grid-template-rows: 210px;
+  gap: 10px;
   min-block-size: 60vh;
-  overflow: auto;
-  scrollbar-width: none;
+  padding: 20px;
 }
 
 
@@ -1054,6 +1146,13 @@ dialog#infoPriority {
   #modal-2 .header-list{
     display: flex;
     gap: 30px;
+  }
+
+  #modal-2 .dialog-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
   }
 
   dialog#infoPriority {
