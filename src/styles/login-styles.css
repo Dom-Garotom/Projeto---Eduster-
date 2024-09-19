@@ -139,7 +139,7 @@ form input:focus {
     border: 1px solid #ffffff;
 }
 
-#buttonCriarConta a {
+#buttonCriarConta a, #buttonLogin a {
     color: #ffffff;
     text-decoration: none;
     display: block;
