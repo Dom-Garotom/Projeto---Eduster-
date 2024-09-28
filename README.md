@@ -1,4 +1,4 @@
-<img src="./src/assets/Imagem-Ilustrativa.png" alt="Imagem ilustrativa do evento" width="100%"/>
+<img src="./src/assets/Imagem-ilustrativa.png" alt="Imagem ilustrativa do site" width="100%"/>
 
 
 <div id='top'>
