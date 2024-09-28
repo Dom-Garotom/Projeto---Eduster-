@@ -1,3 +1,6 @@
+<img src="./src/assets/Imagem-Ilustrativa.png" alt="Imagem ilustrativa do evento" width="100%"/>
+
+
 <div id='top'>
 
 # Eduster : sitema de agendamento e gerenciamento de salas
